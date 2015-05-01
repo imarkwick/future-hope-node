@@ -6,22 +6,20 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' });
 });
 
-/* GET table names for volunteer */
-router.get('/volunteer', function(req, res) {
+/* GET admin page to add names and see all guest list */
+router.get('/admin', function(req, res) {
 	var db = req.db;
 	var collection = db.get('tablecollection');
 	collection.find({},{},function(e,docs) {
-		res.render('volunteer', {
+		res.render('admin', {
 			tablelist : docs
 		})
 	})
 });
 
-/* GET admin page for adding to table names */
-router.get('/admin', function(req, res) {
-	res.render('admin', {
-		title: 'Add guests to a table'
-	})
+/* GET volunteer page for viewing table names */
+router.get('/volunteer', function(req, res) {
+	res.render('volunteer')
 });
 
 /* POST to add guest */
@@ -38,10 +36,15 @@ router.post('/addguest', function(req, res) {
 		if (err) {
 			res.send("There was a problem add information to the database");
 		} else {
-			res.location("volunteer");
-			res.redirect("volunteer");
+			res.location("admin");
+			res.redirect("admin");
 		}
 	});
+});
+
+/* GET volunteer chooses table */
+router.get('/volunteer-table', function(req, res) {
+	res.render('volunteerTable');
 });
 
 module.exports = router;
