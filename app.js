@@ -7,7 +7,7 @@ var bodyParser = require('body-parser');
 
 var mongo = require('mongodb');
 var monk = require('monk');
-var db = process.env.MONGOLAB_URI || monk('localhost:27017/futurehope')
+var db = process.env.MONGOLAB_URI || 'localhost:27017/futurehope'
 
 
 var routes = require('./routes/index');
