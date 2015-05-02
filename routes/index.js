@@ -19,7 +19,13 @@ router.get('/admin', function(req, res) {
 
 /* GET volunteer page for viewing table names */
 router.get('/volunteer', function(req, res) {
-	res.render('volunteer')
+	var db = req.db;
+	var collection = db.get('itemcollection');
+	collection.find({},{},function(e,docs) {
+		res.render('volunteer', {
+			itemlist : docs
+		});
+	});
 });
 
 /* POST to add guest */
@@ -43,8 +49,11 @@ router.post('/addguest', function(req, res) {
 });
 
 /* GET volunteer chooses table */
-router.get('/volunteer-table', function(req, res) {
-	res.render('volunteerTable')
+router.get('/volunteer-table', function(req, res, tablenumber) {
+	var number = 'yo';
+	res.render('volunteerTable', {
+		number : number
+	});
 });
 
 module.exports = router;

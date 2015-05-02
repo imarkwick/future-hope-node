@@ -1,2 +1,8 @@
 <h1>Table list</h1>
 
+<ul>
+	<% itemlist.forEach(function(pledge) { %>
+		<li><%= pledge.item %> - <%= pledge.names %></li>
+	<% }); %>
+</ul>
+
