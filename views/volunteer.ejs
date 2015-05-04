@@ -1,5 +1,26 @@
-<h1>Table list</h1>
+<h1>Table Number ....</h1>
 
+<form id="mela-auction" name="addItems" method="post" action="/add-to-display">
+	<h3>Select the item being auctioned</h3>
+	<select name="item" id="mela-item">
+		<option>Auction item</option
+		<option value="cricket.svg">Cricket Program (1 available)</option>
+		<option value="rugby.svg">Rugby Program (1 available)</option>
+		<option value="home.svg">Home with a House-Parent</option>
+		<option value="teacher.svg">Teacher (1 year)</option>
+	</select><br />
+	<h3>Select the names of table-members making a pledge</h3>
+	<select>
+		<option>Table members</option>
+		<option value="tester-1">Mr One</option>
+		<option value="tester-2">Mrs Two</option>
+		<option value="tester-3">Miss Three</option>
+		<option value="tester-4">Ms. Four</option>
+	</select><br /><br />
+	<button id="mela-add" type="submit">Add to Display</button>
+</form>
+
+<h3>Total pledges made so far</h3>
 <ul>
 	<% itemlist.forEach(function(pledge) { %>
 		<li><%= pledge.item %> - <%= pledge.names %></li>
