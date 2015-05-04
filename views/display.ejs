@@ -1,0 +1,6 @@
+<h3>Total pledges made so far</h3>
+<ul>
+	<% itemlist.forEach(function(pledge) { %>
+		<li><%= pledge.item %> - <%= pledge.names %></li>
+	<% }); %>
+</ul>

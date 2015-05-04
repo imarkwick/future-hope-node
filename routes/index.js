@@ -23,7 +23,6 @@ router.post('/addguest', function(req, res) {
 	var tableNumber = req.body.tableno;
 	var guests = req.body.names;
 	var collection = db.get('tablecollection');
-
 	collection.insert({
 		"tableno" : tableNumber,
 		"names" : guests
@@ -40,6 +39,7 @@ router.post('/addguest', function(req, res) {
 /* GET volunteer chooses table */
 router.get('/volunteer-table', function(req, res, tablenumber) {
 	var number = 'yo';
+	var table = req.body.tablenumber;
 	res.render('volunteerTable', {
 		number : number
 	});
@@ -47,13 +47,7 @@ router.get('/volunteer-table', function(req, res, tablenumber) {
 
 /* GET volunteer page for viewing table names */
 router.get('/volunteer', function(req, res) {
-	var db = req.db;
-	var collection = db.get('itemcollection');
-	collection.find({},{},function(e,docs) {
-		res.render('volunteer', {
-			itemlist : docs
-		});
-	});
+	res.render('volunteer');
 });
 
 /* POST to add an auction item */
@@ -75,9 +69,16 @@ router.post('/add-to-display', function(req, res) {
 	})
 });
 
-
-
-
+/* GET display items */
+router.get('/display', function(req, res) {
+	var db = req.db;
+	var collection = db.get('itemcollection');
+	collection.find({},{},function(e,docs) {
+		res.render('display', {
+			itemlist : docs
+		});
+	});
+});
 
 
 module.exports = router;
