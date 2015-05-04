@@ -17,17 +17,6 @@ router.get('/admin', function(req, res) {
 	})
 });
 
-/* GET volunteer page for viewing table names */
-router.get('/volunteer', function(req, res) {
-	var db = req.db;
-	var collection = db.get('itemcollection');
-	collection.find({},{},function(e,docs) {
-		res.render('volunteer', {
-			itemlist : docs
-		});
-	});
-});
-
 /* POST to add guest */
 router.post('/addguest', function(req, res) {
 	var db = req.db;
@@ -56,4 +45,54 @@ router.get('/volunteer-table', function(req, res, tablenumber) {
 	});
 });
 
+/* GET volunteer page for viewing table names */
+router.get('/volunteer', function(req, res) {
+	var db = req.db;
+	var collection = db.get('itemcollection');
+	collection.find({},{},function(e,docs) {
+		res.render('volunteer', {
+			itemlist : docs
+		});
+	});
+});
+
+/* POST to add an auction item */
+router.post('/add-to-display', function(req, res) {
+	var db = req.db;
+	var itemName = req.body.item;
+	var guestNames = req.body.names;
+	var collection = db.get('itemcollection');
+	collection.insert({
+		"item" : itemName,
+		"names" : guestNames
+	}, function(err, doc) {
+		if (err) {
+			res.send("There was a problem adding the information to the database.");
+		} else {
+			res.location("volunteer");
+			res.redirect("volunteer");
+		}
+	})
+});
+
+
+
+
+
+
 module.exports = router;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
