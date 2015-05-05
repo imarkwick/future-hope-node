@@ -1,6 +1,21 @@
-<h3>Total pledges made so far</h3>
-<ul>
-	<% itemlist.forEach(function(pledge) { %>
-		<li><%= pledge.item %> - <%= pledge.names %></li>
-	<% }); %>
-</ul>
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Testing</title>
+		<link rel="stylesheets/style.css"/>
+		<link rel="stylesheets/foundation.css" />
+		<meta name="description" content="">
+		<meta name="author" content="">
+	</head>
+	<body>
+		<h3>Total pledges made so far</h3>
+		<ul>
+			<% itemlist.forEach(function(pledge) { %>
+				<li><%= pledge.item %> - <%= pledge.names %></li>
+			<% }); %>
+		</ul>
+		<script src="http://code.jquery.com/jquery-1.11.1.js"></script>
+		<script src="javascripts/foundation.js"></script>
+	</body>
+</html>
