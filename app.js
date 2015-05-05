@@ -12,7 +12,7 @@ var db = monk(dbs);
 
 var TableList = require('./lib/tableItem');
 var routes = require('./routes/index');
-var users = require('./routes/users');
+// var users = require('./routes/users');
 
 var app = express();
 
@@ -32,7 +32,7 @@ app.use(function(req, res, next) {
 });
 
 app.use('/', routes);
-app.use('/users', users);
+// app.use('/users', users);
 
 var tableList = new TableList(); 
 

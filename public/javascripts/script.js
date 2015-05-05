@@ -1,5 +1,7 @@
 $(document).ready(function() {
 
+  // Multi-select form
+
   var selected = {};
   $('#guest-list').click(function(e) {
     var $this = $(this),
@@ -18,5 +20,12 @@ $(document).ready(function() {
     return false;
   });
 
-	alert('working');
+  // Finding table number selected
+
+  var number = document.getElementById('number');
+  var button = document.getElementById('button');
+  $(button).click(function() {
+    alert(number.value);
+  });
+
 });
