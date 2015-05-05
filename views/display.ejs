@@ -9,17 +9,10 @@
 		<meta name="author" content="">
 	</head>
 	<body>
-		<h1>Add guests to a table</h1>
-		<form id="addToTable" name="addGuests" method="post" action="/addguest">
-			<input type="text" placeholder="add table number" name="tableno">
-			<input type="text" placeholder="add guest names" name="names">
-			<button type="submit">Add</button>
-		</form>
-
-		<h2>Complete Guest List</h2>
+		<h3>Total pledges made so far</h3>
 		<ul>
-			<% tablelist.forEach(function(guest) { %>
-				<li><%= guest.tableno %> - <%= guest.names %></li>
+			<% itemlist.forEach(function(pledge) { %>
+				<li><%= pledge.item %> - <%= pledge.names %></li>
 			<% }); %>
 		</ul>
 		<script src="javascripts/jquery.js"></script>
