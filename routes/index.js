@@ -3,10 +3,6 @@ var router = express.Router();
 
 /* GET home page */
 router.get('/', function(req, res) {
-	var db = req.db;
-	var collection = db.get('tablecollection');
-	// tableList.find_names(collection, 1)
-	// response.send(tableList)
   res.render('index');
 });
 
@@ -40,14 +36,12 @@ router.post('/addguest', function(req, res) {
 	});
 });
 
-
 /* GET volunteer chooses table */
 router.get('/volunteer-table', function(req, res) {
 	res.render('volunteerTable');
 });
 
-
-
+/* POST tablenumber to volunteer page in session */
 router.post('/tablenumber', function(req, res){
 	var sess = req.session;
 	var table = req.body.tablenumber;
@@ -75,25 +69,21 @@ router.get('/volunteer', function(req, res) {
 			var mynumber = req.session.table;
 			collection.find({ tableno: mynumber }, function(e, docs){
 				var data = docs
-				data.forEach(function(input) {
-					list.push(input.names);
+				data.forEach(function(table) {
+					list.push(table.names);
 				});
-				var string = list.join();
-				var array = string.split(',');
-				console.log(array);
+				guests = list.join().split(',');
+				for (i=0; i<guests.length; i++) {
+					if(guests[i][0] === ' ')
+						guests[i].slice(1);
+				}
+				console.log(guests[1][0]);
+				console.log(guests);
+				res.render('volunteer', { number : mynumber, tablenames : guests });
 			});
-			res.render('volunteer', { number : mynumber });
 		}	
 	});
 });
-
-function tableNumber(){
-	if (sess.table) {
-		return sess.table
-	} else {
-		return null
-	}
-};
 
 /* POST to add an auction item */
 router.post('/add-to-display', function(req, res) {

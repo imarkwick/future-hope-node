@@ -20,12 +20,6 @@ $(document).ready(function() {
     return false;
   });
 
-  // Finding table number selected
-
-  var number = document.getElementById('number');
-  var button = document.getElementById('button');
-  $(button).click(function() {
-    alert(number.value);
-  });
+  // 
 
 });

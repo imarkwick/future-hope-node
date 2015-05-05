@@ -11,9 +11,7 @@ var monk = require('monk');
 var dbs = process.env.MONGOLAB_URI || 'localhost:27017/futurehope';
 var db = monk(dbs);
 
-var TableList = require('./lib/tableItem');
 var routes = require('./routes/index');
-// var users = require('./routes/users');
 
 var app = express();
 
@@ -39,8 +37,6 @@ app.use(function(req, res, next) {
 
 app.use('/', routes);
 // app.use('/users', users);
-
-var tableList = new TableList(); 
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
