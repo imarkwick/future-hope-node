@@ -67,13 +67,23 @@ router.post('/tablenumber', function(req, res){
 router.get('/volunteer', function(req, res) {
 	var db = req.db;
 	var collection = db.get('tablecollection')
+	var list = [];
 	req.session.reload(function(err) {
 		if(err) {
 			console.log(err);
 		} else {
 			var mynumber = req.session.table;
+			collection.find({ tableno: mynumber }, function(e, docs){
+				var data = docs
+				data.forEach(function(input) {
+					list.push(input.names);
+				});
+				var string = list.join();
+				var array = string.split(',');
+				console.log(array);
+			});
 			res.render('volunteer', { number : mynumber });
-		}
+		}	
 	});
 });
 
