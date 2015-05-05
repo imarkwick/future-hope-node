@@ -9,7 +9,8 @@
 		<meta name="author" content="">
 	</head>
 	<body>
-		<h1>Table Number ....</h1>
+		<h1>Table Number... </h1><p><%= number %></p>
+
 		<form id="mela-auction" name="addItems" method="post" action="/add-to-display">
 			<h3>Select the item being auctioned</h3>
 			<select name="item" id="mela-item">
@@ -35,12 +36,6 @@
 			<button id="mela-add" type="submit">Add to Display</button>
 		</form>
 
-		<h4>Guest for table... <%= guests[0].tableno %></h4>
-		<ul>
-			<% guests.forEach(function(guest) { %>
-				<li><%= guest.names %></li>
-			<% }); %>
-		</ul>
 		<script src="javascripts/jquery.js"></script>
 		<script src="javascripts/foundation.js"></script>
 		<script src="javascripts/script.js"></script>

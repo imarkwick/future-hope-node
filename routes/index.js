@@ -40,25 +40,50 @@ router.post('/addguest', function(req, res) {
 	});
 });
 
+
 /* GET volunteer chooses table */
-router.get('/volunteer-table', function(req, res, tablenumber) {
-	var number = 'yo';
+router.get('/volunteer-table', function(req, res) {
+	res.render('volunteerTable');
+});
+
+
+
+router.post('/tablenumber', function(req, res){
+	var sess = req.session;
 	var table = req.body.tablenumber;
-	res.render('volunteerTable', {
-		number : number
+	sess.table = table;
+	req.session.save(function(err) {
+		if(err) {
+			console.log(err);
+		} else {
+			console.log("save");
+		};
 	});
+	res.location("volunteer");
+	res.redirect("volunteer");
 });
 
 /* GET volunteer page for viewing table names */
 router.get('/volunteer', function(req, res) {
 	var db = req.db;
 	var collection = db.get('tablecollection')
-	collection.find({ tableno: '2' },function(e,docs) {
-		res.render('volunteer', {
-			guests : docs
-		})
-	})
+	req.session.reload(function(err) {
+		if(err) {
+			console.log(err);
+		} else {
+			var mynumber = req.session.table;
+			res.render('volunteer', { number : mynumber });
+		}
+	});
 });
+
+function tableNumber(){
+	if (sess.table) {
+		return sess.table
+	} else {
+		return null
+	}
+};
 
 /* POST to add an auction item */
 router.post('/add-to-display', function(req, res) {
@@ -90,8 +115,5 @@ router.get('/display', function(req, res) {
 	});
 });
 
-
 module.exports = router;
-
-
 
