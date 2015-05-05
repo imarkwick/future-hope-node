@@ -1,23 +1,52 @@
-<h1>Table Number ....</h1>
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Testing</title>
+		<link rel="stylesheets/style.css"/>
+		<link rel="stylesheets/foundation.css" />
+		<meta name="description" content="">
+		<meta name="author" content="">
+	</head>
+	<body>
 
-<form id="mela-auction" name="addItems" method="post" action="/add-to-display">
-	<h3>Select the item being auctioned</h3>
-	<select name="item" id="mela-item">
-		<option>Auction item</option
-		<option value="cricket.svg">Cricket Program (1 available)</option>
-		<option value="rugby.svg">Rugby Program (1 available)</option>
-		<option value="home.svg">Home with a House-Parent</option>
-		<option value="teacher.svg">Teacher (1 year)</option>
-	</select><br />
-	<h3>Select the names of table-members making a pledge</h3>
-	<select name="names" id="guest-names">
-		<option>Table members</option>
-		<option value="Mr-One">Mr One</option>
-		<option value="Mrs-Two">Mrs Two</option>
-		<option value="Miss-Three">Miss Three</option>
-		<option value="Ms-Four">Ms. Four</option>
-	</select><br /><br />
-	<button id="mela-add" type="submit">Add to Display</button>
-</form>
+		<h1>Table Number ....</h1>
 
+		<form id="mela-auction" name="addItems" method="post" action="/add-to-display">
+			<h3>Select the item being auctioned</h3>
+			<select name="item" id="mela-item">
+				<option>Auction item</option
+				<option value="cricket.svg">Cricket Program (1 available)</option>
+				<option value="rugby.svg">Rugby Program (1 available)</option>
+				<option value="home.svg">Home with a House-Parent</option>
+				<option value="teacher1year.svg">Teacher (1 year)</option>
+				<option value="childhood1year.svg">Childhood (1 year)</option>
+				<option value="degree.svg">University Degree</option>
+				<option value="teacher1month.svg">Teacher (1 month)</option>
+				<option value="childhood1month.svg">Childhood (1 month)</option>
+				<option value="activities.svg">Activities</option>
+			</select><br />
+
+			<h3>Select the names of table-members making a pledge</h3>
+			<select name="names" id="guest-list" size="10" multiple>
+				<option value="Mr-One">Mr One</option>
+				<option value="Mrs-Two">Mrs Two</option>
+				<option value="Miss-Three">Miss Three</option>
+				<option value="Ms-Four">Ms. Four</option>
+			</select><br /><br />
+			<button id="mela-add" type="submit">Add to Display</button>
+		</form>
+
+		<h4>Guest for table... <%= guests[0].tableno %></h4>
+		<ul>
+			<% guests.forEach(function(guest) { %>
+				<li><%= guest.names %></li>
+			<% }); %>
+		</ul>
+
+		<script src="javascripts/jquery.js"></script>
+		<script src="javascripts/foundation.js"></script>
+		<script src="javascripts/script.js"></script>
+	</body>
+</html>
 

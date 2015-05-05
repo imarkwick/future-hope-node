@@ -2,8 +2,12 @@ var express = require('express');
 var router = express.Router();
 
 /* GET home page */
-router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express' });
+router.get('/', function(req, res) {
+	var db = req.db;
+	var collection = db.get('tablecollection');
+	// tableList.find_names(collection, 1)
+	// response.send(tableList)
+  res.render('index');
 });
 
 /* GET admin page to add names and see all guest list */
@@ -47,7 +51,13 @@ router.get('/volunteer-table', function(req, res, tablenumber) {
 
 /* GET volunteer page for viewing table names */
 router.get('/volunteer', function(req, res) {
-	res.render('volunteer');
+	var db = req.db;
+	var collection = db.get('tablecollection')
+	collection.find({ tableno: '2' },function(e,docs) {
+		res.render('volunteer', {
+			guests : docs
+		})
+	})
 });
 
 /* POST to add an auction item */
@@ -82,18 +92,6 @@ router.get('/display', function(req, res) {
 
 
 module.exports = router;
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
