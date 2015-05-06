@@ -15,7 +15,7 @@
 		<form id="mela-auction" name="addItems" method="post" action="/add-to-display">
 			<h3>Select the item being auctioned</h3>
 			<select name="item" id="mela-item">
-				<option>Auction item</option
+				<option>Auction item</option>
 				<option value="cricket.svg">Cricket Program (1 available)</option>
 				<option value="rugby.svg">Rugby Program (1 available)</option>
 				<option value="home.svg">Home with a House-Parent</option>
@@ -46,6 +46,11 @@
 		<script src="/socket.io/socket.io.js"></script>
 		<script>
 		  var socket = io();
+		  $('#mela-auction').submit(function() {
+		  	socket.emit('chat message', $('#mela-item').val());
+		  	$('#mela-item').val('');
+		  	return false;
+		  });
 		</script>
 	</body>
 </html>
