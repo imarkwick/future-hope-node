@@ -20,7 +20,13 @@
 			var socket = io();
 			socket.emit('create', 'room1');
 			socket.on('chat message', function(msg) {
-		  	$('#display-messages').append($('<li>').text(msg));
+				var string = msg.substring(0, msg.length -1);
+				var array = string.split(',');
+				array.forEach(function(image) {
+					var pic = '<img src="images/' + image + '"/>'
+					console.log(pic);
+			  	$('#display-messages').append(pic);
+				});
 		  });
 		</script>
 	</body>
