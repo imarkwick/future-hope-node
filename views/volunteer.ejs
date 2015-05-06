@@ -36,7 +36,9 @@
 			<button id="mela-add" type="submit">Add to Display</button>
 		</form>
 		<ul>
-			
+			<% guests.forEach(function(name) { %>
+				<li><%= name %></li>
+			<%	}); %>
 		</ul>
 
 		<script src="javascripts/jquery.js"></script>

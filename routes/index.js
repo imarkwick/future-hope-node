@@ -73,10 +73,10 @@ router.get('/volunteer', function(req, res) {
 					list.push(table.names);
 				});
 				guests = list.join().split(',');
-				for (i=0; i<guests.length; i++) {
-					if(guests[i][0] === ' ')
-						guests[i].slice(1);
-				}
+				// for (i=0; i<guests.length; i++) {
+				// 	if(guests[i][0] === ' ')
+				// 		guests[i].slice(1);
+				// }
 				console.log(guests[1][0]);
 				console.log(guests);
 				res.render('volunteer', { number : mynumber, tablenames : guests });
