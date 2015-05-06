@@ -10,8 +10,8 @@
 	</head>
 	<body>
 		<h3>Total pledges made so far</h3>
-		<ul id="display-messages">
-		</ul>
+		<div id="display-messages">
+		</div>
 		<script src="javascripts/jquery.js"></script>
 		<script src="javascripts/foundation.js"></script>
 		<script src="javascripts/script.js"></script>
@@ -20,7 +20,7 @@
 			var socket = io();
 			socket.emit('create', 'room1');
 			socket.on('chat message', function(msg) {
-		  	$('#display-messages').append($('<li>').text(msg));
+		  	$('#display-messages').append($('<img src>').text(msg));
 		  });
 		</script>
 	</body>
