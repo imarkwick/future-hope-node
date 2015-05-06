@@ -49,8 +49,17 @@
 		<script src="/socket.io/socket.io.js"></script>
 		<script>
 		  var socket = io();
+	  	String.prototype.repeat = function(num) {
+	  		return new Array(num + 1).join(this + ',');
+	  	};
 		  $('#mela-auction').submit(function() {
-		  	socket.emit('chat message', $('#mela-item').val() +','+ $('#guest-list').val());
+		  	var item = $('#mela-item').val();
+		  	var names = $('#guest-list').val();
+		  	var total = Object.keys(names).length
+
+		  	alert(item.repeat(total));
+
+		  	socket.emit('chat message', item.repeat(total));
 		  	$('#mela-item').val('');
 		  	$('#guest-list').val('');
 		  	return false;
