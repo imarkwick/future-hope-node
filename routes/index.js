@@ -73,7 +73,6 @@ router.get('/volunteer', function(req, res) {
 					list.push(table.names);
 				});
 				guests = list.join().split(',');
-				console.log(guests);
 				res.render('volunteer', { number : mynumber, tablenames : guests });
 			});
 		}	

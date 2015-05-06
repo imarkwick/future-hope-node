@@ -56,9 +56,6 @@
 		  	var item = $('#mela-item').val();
 		  	var names = $('#guest-list').val();
 		  	var total = Object.keys(names).length
-
-		  	alert(item.repeat(total));
-
 		  	socket.emit('chat message', item.repeat(total));
 		  	$('#mela-item').val('');
 		  	$('#guest-list').val('');
