@@ -40,6 +40,9 @@
 		<form action="/volunteer-table">
 			<button type="submit">Reselect Table</button>
 		</form>
+		<ul id="volunteer-messages">
+
+		</ul>
 		<script src="javascripts/jquery.js"></script>
 		<script src="javascripts/foundation.js"></script>
 		<script src="javascripts/script.js"></script>
@@ -47,8 +50,9 @@
 		<script>
 		  var socket = io();
 		  $('#mela-auction').submit(function() {
-		  	socket.emit('chat message', $('#mela-item').val());
+		  	socket.emit('chat message', $('#mela-item').val() +','+ $('#guest-list').val());
 		  	$('#mela-item').val('');
+		  	$('#guest-list').val('');
 		  	return false;
 		  });
 		</script>

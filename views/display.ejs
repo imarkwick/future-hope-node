@@ -10,17 +10,18 @@
 	</head>
 	<body>
 		<h3>Total pledges made so far</h3>
-		<ul>
-			<% itemlist.forEach(function(pledge) { %>
-				<li><%= pledge.item %> - <%= pledge.names %></li>
-			<% }); %>
+		<ul id="display-messages">
 		</ul>
 		<script src="javascripts/jquery.js"></script>
 		<script src="javascripts/foundation.js"></script>
 		<script src="javascripts/script.js"></script>
-			<script src="/socket.io/socket.io.js"></script>
+		<script src="/socket.io/socket.io.js"></script>
 		<script>
-		  var socket = io();
+			var socket = io();
+			socket.emit('create', 'room1');
+			socket.on('chat message', function(msg) {
+		  	$('#display-messages').append($('<li>').text(msg));
+		  });
 		</script>
 	</body>
 </html>
