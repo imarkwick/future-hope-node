@@ -10,7 +10,6 @@ var mongo = require('mongodb');
 var monk = require('monk');
 var dbs = process.env.MONGOLAB_URI || 'localhost:27017/futurehope';
 var db = monk(dbs);
-
 var routes = require('./routes/index');
 
 var app = express();
