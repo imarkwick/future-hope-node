@@ -3,14 +3,15 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Testing</title>
-		<link rel="stylesheets/style.css"/>
-		<link rel="stylesheets/foundation.css" />
+		<link rel="stylesheet" href="stylesheets/style.css"/>
+		<link rel="stylesheet" href="stylesheets/foundation.css" />
 		<meta name="description" content="">
 		<meta name="author" content="">
 	</head>
 	<body>
-		<h1>Table Number... </h1><p><%= number %></p>
-
+		<header class="row">
+			<h1 class="small-12 columns">Table Number... <%= number %></h1>
+		</header>
 		<form id="mela-auction" name="addItems" method="post" action="/add-to-display">
 			<h3>Select the item being auctioned</h3>
 			<select name="item" id="mela-item">
@@ -27,20 +28,18 @@
 			</select><br />
 
 			<h3>Select the names of table-members making a pledge</h3>
-			<select name="names" id="guest-list" size="10" multiple>
-				<option value="Mr-One">Mr One</option>
-				<option value="Mrs-Two">Mrs Two</option>
-				<option value="Miss-Three">Miss Three</option>
-				<option value="Ms-Four">Ms. Four</option>
-			</select><br /><br />
+			<select name="names" id="guest-list" size="12" multiple>
+				<% guests.forEach(function(name) { %>
+					<option value="<%= name %>"><%= name %></option>
+				<%	}); %>
+			</select>
+			<br />
+			<br />
 			<button id="mela-add" type="submit">Add to Display</button>
 		</form>
-		<ul>
-			<% guests.forEach(function(name) { %>
-				<li><%= name %></li>
-			<%	}); %>
-		</ul>
-
+		<form action="/volunteer-table">
+			<button type="submit">Reselect Table</button>
+		</form>
 		<script src="javascripts/jquery.js"></script>
 		<script src="javascripts/foundation.js"></script>
 		<script src="javascripts/script.js"></script>
