@@ -2,7 +2,7 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
-		<title>Testing</title>
+		<title>Future Hope Mela</title>
 		<link rel="stylesheet" href="stylesheets/style.css"/>
 		<link rel="stylesheet" href="stylesheets/foundation.css" />
 		<meta name="description" content="">
@@ -10,39 +10,46 @@
 	</head>
 	<body>
 		<header class="row">
-			<h1 class="small-12 columns">Table Number... <%= number %></h1>
+			<h1 class="small-12 columns">You're Working At Table No... <%= number %></h1>
 		</header>
 		<form id="mela-auction" name="addItems" method="post" action="/add-to-display">
-			<h3>Select the item being auctioned</h3>
-			<select name="item" id="mela-item">
-				<option>Auction item</option>
-				<option value="cricket.svg">Cricket Program (1 available)</option>
-				<option value="rugby.svg">Rugby Program (1 available)</option>
-				<option value="home.svg">Home with a House-Parent</option>
-				<option value="teacher1year.svg">Teacher (1 year)</option>
-				<option value="childhood1year.svg">Childhood (1 year)</option>
-				<option value="degree.svg">University Degree</option>
-				<option value="teacher1month.svg">Teacher (1 month)</option>
-				<option value="childhood1month.svg">Childhood (1 month)</option>
-				<option value="activities.svg">Activities</option>
-			</select><br />
-
-			<h3>Select the names of table-members making a pledge</h3>
-			<select name="names" id="guest-list" size="12" multiple>
-				<% guests.forEach(function(name) { %>
-					<option value="<%= name %>"><%= name %></option>
-				<%	}); %>
-			</select>
-			<br />
-			<br />
-			<button id="mela-add" type="submit">Add to Display</button>
+			<header class="row">
+				<h3 class="small-12 columns">Select the item being auctioned</h3>
+			</header>
+			<div class="row">
+				<select class="small-12 columns" name="item" id="mela-item">
+					<option>Auction item</option>
+					<option value="cricket.svg">Cricket Program (1 available)</option>
+					<option value="rugby.svg">Rugby Program (1 available)</option>
+					<option value="home.svg">Home with a House-Parent</option>
+					<option value="teacher1year.svg">Teacher (1 year)</option>
+					<option value="childhood1year.svg">Childhood (1 year)</option>
+					<option value="degree.svg">University Degree</option>
+					<option value="teacher1month.svg">Teacher (1 month)</option>
+					<option value="childhood1month.svg">Childhood (1 month)</option>
+					<option value="activities.svg">Activities</option>
+				</select>
+			</div>
+			<header class="row">
+				<h3 class="small-12 columns">Select the names of table-members making a pledge</h3>
+			</header>
+			<div class="row">
+				<select class="small-12 columns" name="names" id="guest-list" size="12" multiple>
+					<% guests.forEach(function(name) { %>
+						<option value="<%= name %>"><%= name %></option>
+					<%	}); %>
+				</select>
+			</div>
+			<div class="row">
+				<button class="small-12 columns" id="mela-add" type="submit">Add to Display</button>
+			</div>
 		</form>
-		<form action="/volunteer-table">
-			<button type="submit">Reselect Table</button>
+		<form class="row" action="/volunteer-table">
+			<button class="small-12 columns" type="submit">Reselect Table Number</button>
 		</form>
-		<ul id="volunteer-messages">
-
-		</ul>
+		<form class="row" action="/admin">
+			<button class="small-12 columns" type="submit">Add Guests To The Table</button>
+		</form>
 		<script src="javascripts/jquery.js"></script>
 		<script src="javascripts/foundation.js"></script>
 		<script src="javascripts/script.js"></script>
