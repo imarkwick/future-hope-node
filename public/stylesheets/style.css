@@ -32,7 +32,7 @@ a {
 }
 
 button{
-	width: 50%;
+	width: 50px;
 	height:200px;
 	background-color: #de5958;
 	font-size: 40px;
@@ -41,6 +41,11 @@ button{
 	margin-left: auto;
   margin-right: auto;
   display: block;
+}
+
+button#buttonintro{
+	width:50px;
+	height:150px;
 }
 
 button:hover{
