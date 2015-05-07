@@ -10,7 +10,6 @@ router.get('/', function(req, res) {
 router.get('/admin', function(req, res) {
 	var db = req.db;
 	var collection = db.get('tablecollection');
-	var list = {}
 	collection.find({},{},function(e,docs) {
 		res.render('admin', {
 			tablelist : docs
@@ -85,8 +84,12 @@ router.post('/add-to-display', function(req, res) {
 	var db = req.db;
 	var itemName = req.body.item;
 	var guestNames = req.body.names;
+
+	if (typeof guestNames === 'string')
+		guestNames =[guestNames]
+	console.log(guestNames);
+
 	var collection = db.get('itemcollection');
-	console.log('hi');
 	collection.insert({
 		"item" : itemName,
 		"names" : guestNames
@@ -104,9 +107,27 @@ router.post('/add-to-display', function(req, res) {
 router.get('/display', function(req, res) {
 	var db = req.db;
 	var collection = db.get('itemcollection');
+	var itemArray = []
 	collection.find({},{},function(e,docs) {
+		var data = docs
+		console.log(data);
+		String.prototype.repeat = function(num) {
+	    return new Array(num + 1).join(this + ',');
+	  };		
+		data.forEach(function(item) {
+			if (typeof item.names === 'string')
+				item.names = [item.names];
+		}) 
+		data.forEach(function(item) {
+			console.log(item.item + '-----' + item.names.length)
+			itemArray.push( (item.item).repeat(item.names.length) );
+		});
+
+		console.log('item array.... ' + itemArray.join())
+
 		res.render('display', {
-			itemlist : docs
+			itemlist : docs,
+			itemArray : itemArray
 		});
 	});
 });

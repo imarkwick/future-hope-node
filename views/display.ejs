@@ -12,6 +12,18 @@
 		<h3>Total pledges made so far</h3>
 		<ul id="display-messages">
 		</ul>
+		<ul>
+			<% itemlist.forEach(function(item) { %>
+				<li><%= item.item %></li>
+				<li><%= item.names.length %></li>
+				<li><%= item.names %></li>
+			<% }); %>
+		</ul>
+		<ul>
+			<% itemArray.forEach(function(item) { %>
+				<li><%= item %></li>
+			<%	}); %>
+		</ul>
 		<script src="javascripts/jquery.js"></script>
 		<script src="javascripts/foundation.js"></script>
 		<script src="javascripts/script.js"></script>
@@ -28,6 +40,9 @@
 			  	$('#display-messages').append(pic);
 				});
 		  });
+		</script>
+		<script>
+
 		</script>
 	</body>
 </html>
