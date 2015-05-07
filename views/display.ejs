@@ -10,11 +10,16 @@
 		<meta name="author" content="">
 	</head>
 	<body>
+
 		<div id="display">
 		</div>
 		<div id="display-messages">
 		</div>	
-
+		<ul>
+			<% images.forEach(function(pic) { %>
+				<img src="images/<%= pic %>" />
+			<%	}); %>
+		</ul>
 		<script src="javascripts/jquery.js"></script>
 		<script src="javascripts/foundation.js"></script>
 		<script src="javascripts/script.js"></script>
@@ -39,6 +44,10 @@
 		  });
 		</script>
 		<script>
+<<<<<<< HEAD
+=======
+
+>>>>>>> b69aaac065aa33fb9fbb75e76216069c47b2ec2c
 		</script>
 	</body>
 </html>
