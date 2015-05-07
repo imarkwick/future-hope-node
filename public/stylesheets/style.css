@@ -1,13 +1,65 @@
 body {
   padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font: 14px "Roboto", Helvetica, Arial, sans-serif;
+}
+
+div#display {
+ background-image: url(/images/intro.jpg);
+ height: 100%;
+ width: 100%;
+ z-index: 1; 
+ position: absolute;
+ top: 0px;
+ left: 0px;
+  background-size: cover;
+  display: block;
 }
 
 a {
   color: #00B7FF;
 }
 
-li {
-  list-style-type: none;
+img#avatars{
+	z-index: 2;
+	position: relative;
 }
 
+img#logostart{
+  height: 200px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+
+}
+h2#welcome{
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	font-family: 'Love Ya Like A Sister', Helvetica;
+	font-size: 60px;
+	margin-top: 30%;
+	margin-bottom: 50px;
+}
+select#selecttable{
+	width: 70%;
+	height: 200px;
+	margin-bottom: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  float: none;
+  display: block;
+}
+
+h1#volunteerheader{
+	margin-left: auto;
+	margin-right: auto;
+	display: table;
+	margin-top: 70px;
+	margin-bottom: 50px;
+	font-size: 100px;
+	font-family: 'Love Ya Like A Sister', Helvetica;
+}
+form#mela-auction {
+	color: #7c2529;
+}

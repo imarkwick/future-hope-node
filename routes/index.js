@@ -106,6 +106,7 @@ router.get('/display', function(req, res) {
 	var items = []
 	collection.find({},{},function(e,docs) {
 		var data = docs
+		console.log(data);
 		String.prototype.repeat = function(num) {
 	    return new Array(num + 1).join(this + ',');
 	  };		
