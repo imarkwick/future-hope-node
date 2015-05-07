@@ -106,16 +106,15 @@ router.get('/display', function(req, res) {
 	var items = []
 	collection.find({},{},function(e,docs) {
 		var data = docs
+		console.log(data);
 		String.prototype.repeat = function(num) {
 	    return new Array(num + 1).join(this + ',');
 	  };		
 		data.forEach(function(item) {
 			if (typeof item.names === 'string')
 				item.names = [item.names];
-		}) 
-		data.forEach(function(item) {
 			itemArray.push( (item.item).repeat(item.names.length) );
-		});
+		}) 
 		itemArray.forEach(function(string) {
 			var last = string.length-1;
 			items.push(string.slice(0, last));
