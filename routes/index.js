@@ -112,10 +112,8 @@ router.get('/display', function(req, res) {
 		data.forEach(function(item) {
 			if (typeof item.names === 'string')
 				item.names = [item.names];
-		}) 
-		data.forEach(function(item) {
 			itemArray.push( (item.item).repeat(item.names.length) );
-		});
+		}) 
 		itemArray.forEach(function(string) {
 			var last = string.length-1;
 			items.push(string.slice(0, last));
