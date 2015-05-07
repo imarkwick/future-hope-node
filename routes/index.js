@@ -10,6 +10,7 @@ router.get('/', function(req, res) {
 router.get('/admin', function(req, res) {
 	var db = req.db;
 	var collection = db.get('tablecollection');
+	var list = {}
 	collection.find({},{},function(e,docs) {
 		res.render('admin', {
 			tablelist : docs
@@ -85,6 +86,7 @@ router.post('/add-to-display', function(req, res) {
 	var itemName = req.body.item;
 	var guestNames = req.body.names;
 	var collection = db.get('itemcollection');
+	console.log('hi');
 	collection.insert({
 		"item" : itemName,
 		"names" : guestNames

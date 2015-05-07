@@ -7,6 +7,7 @@ a {
   color: #00B7FF;
 }
 
+<<<<<<< HEAD
 img#logostart{
   height: 200px;
   display: block;
@@ -14,3 +15,9 @@ img#logostart{
   margin-right: auto;
   margin-top: 100px;
 }
+=======
+li {
+  list-style-type: none;
+}
+
+>>>>>>> e82372998377c8cbe97201f5788d921ac407eb42

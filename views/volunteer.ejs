@@ -59,7 +59,16 @@
 	  	String.prototype.repeat = function(num) {
 	  		return new Array(num + 1).join(this + ',');
 	  	};
-		  $('#mela-auction').submit(function() {
+		  $('#mela-auction').submit(function(e) {
+		  	e.preventDefault();
+		  	$.ajax({
+		  		type: "POST",
+		  		url: "/add-to-display",
+		  		data: $('form#mela-auction').serialize(),
+		  		success: function() {
+		  			alert('saved to db');
+		  		}
+		  	});
 		  	var item = $('#mela-item').val();
 		  	var names = $('#guest-list').val();
 		  	var total = Object.keys(names).length
