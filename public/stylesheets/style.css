@@ -4,13 +4,13 @@ body {
 }
 
 div#display {
- background-image: url(/images/intro.jpg);
- height: 100%;
- width: 100%;
- z-index: 1; 
- position: absolute;
- top: 0px;
- left: 0px;
+	background-image: url(/images/intro.jpg);
+	height: 100%;
+	width: 100%;
+	z-index: 1; 
+	position: absolute;
+	top: 0px;
+	left: 0px;
   background-size: cover;
   display: block;
 }
@@ -18,6 +18,7 @@ div#display {
 li {
 	list-style-type: none;
 }
+
 select#mela-item{
 	font-size: 80px;
   height: 162px;
@@ -32,8 +33,8 @@ a {
 }
 
 button{
-	width: 50px;
-	height:200px;
+	width: 12rem;
+	height: 4rem;
 	background-color: #de5958;
 	font-size: 40px;
 	padding: 10px;
@@ -41,6 +42,13 @@ button{
 	margin-left: auto;
   margin-right: auto;
   display: block;
+}
+
+button#admin-add {
+	width: 12rem;
+	height: 4rem;
+	margin-left: 6rem;
+	font-size: 2rem;
 }
 
 button#buttonintro{
@@ -52,6 +60,7 @@ button:hover{
 	background-color: #d22630;
 	opacity: .9	;
 }
+
 option{
 	margin-bottom: 100px;
 	font-size: 100px;
@@ -89,6 +98,7 @@ h2#welcome{
 	margin-top: 30%;
 	margin-bottom: 50px;
 }
+
 select#selecttable{
 	width: 70%;
 	height: 200px;
@@ -108,6 +118,7 @@ h1#volunteerheader{
 	font-size: 100px;
 	font-family: 'Love Ya Like A Sister', Helvetica;
 }
+
 form#mela-auction {
 	color: #7c2529;
 }
