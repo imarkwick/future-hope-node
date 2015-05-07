@@ -6,3 +6,11 @@ body {
 a {
   color: #00B7FF;
 }
+
+img#logostart{
+  height: 200px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+}
