@@ -10,18 +10,11 @@
 	</head>
 	<body>
 		<h3>Total pledges made so far</h3>
-		<ul id="display-messages">
-		</ul>
+		<div id="display-messages">
+		</div>
 		<ul>
-			<% itemlist.forEach(function(item) { %>
-				<li><%= item.item %></li>
-				<li><%= item.names.length %></li>
-				<li><%= item.names %></li>
-			<% }); %>
-		</ul>
-		<ul>
-			<% itemArray.forEach(function(item) { %>
-				<li><%= item %></li>
+			<% images.forEach(function(pic) { %>
+				<img src="images/<%= pic %>" />
 			<%	}); %>
 		</ul>
 		<script src="javascripts/jquery.js"></script>

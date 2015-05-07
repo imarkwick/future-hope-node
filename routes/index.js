@@ -84,11 +84,6 @@ router.post('/add-to-display', function(req, res) {
 	var db = req.db;
 	var itemName = req.body.item;
 	var guestNames = req.body.names;
-
-	if (typeof guestNames === 'string')
-		guestNames =[guestNames]
-	console.log(guestNames);
-
 	var collection = db.get('itemcollection');
 	collection.insert({
 		"item" : itemName,
@@ -108,9 +103,9 @@ router.get('/display', function(req, res) {
 	var db = req.db;
 	var collection = db.get('itemcollection');
 	var itemArray = []
+	var items = []
 	collection.find({},{},function(e,docs) {
 		var data = docs
-		console.log(data);
 		String.prototype.repeat = function(num) {
 	    return new Array(num + 1).join(this + ',');
 	  };		
@@ -119,15 +114,16 @@ router.get('/display', function(req, res) {
 				item.names = [item.names];
 		}) 
 		data.forEach(function(item) {
-			console.log(item.item + '-----' + item.names.length)
 			itemArray.push( (item.item).repeat(item.names.length) );
 		});
-
-		console.log('item array.... ' + itemArray.join())
-
+		itemArray.forEach(function(string) {
+			var last = string.length-1;
+			items.push(string.slice(0, last));
+		});
+		var images = items.join().split(',');
 		res.render('display', {
 			itemlist : docs,
-			itemArray : itemArray
+			images : images
 		});
 	});
 });
