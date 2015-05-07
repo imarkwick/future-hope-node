@@ -28,7 +28,7 @@ router.post('/addguest', function(req, res) {
 		"names" : guests
 	}, function(err, doc) {
 		if (err) {
-			res.send("There was a problem add information to the database");
+			res.send("There was a problem adding information to the database");
 		} else {
 			res.location("admin");
 			res.redirect("admin");
