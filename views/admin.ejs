@@ -23,7 +23,8 @@
 		</header>
 		<ul class="small-12 columns">
 			<% tablelist.forEach(function(guest) { %>
-				<li><%= guest.tableno %> - <%= guest.names %></li>
+				<li>Table no: <%= guest.tableno %></li>
+				<li>Guests: <%= guest.names %></li>
 			<% }); %>
 		</ul>
 		<script src="javascripts/jquery.js"></script>

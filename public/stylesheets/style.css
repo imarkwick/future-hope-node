@@ -15,6 +15,10 @@ div#display {
   display: block;
 }
 
+li {
+	list-style-type: none;
+}
+
 a {
   color: #00B7FF;
 }
