@@ -18,7 +18,11 @@ div#display {
 li {
 	list-style-type: none;
 }
-
+select#mela-item{
+	font-size: 100px;
+  height: 162px;
+}
+}
 a {
   color: #00B7FF;
 }
