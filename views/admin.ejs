@@ -2,22 +2,25 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
-		<title>Testing</title>
+		<title>Future Hope Mela</title>
 		<link rel="stylesheet" href="stylesheets/style.css"/>
 		<link rel="stylesheet" href="stylesheets/foundation.css" />
 		<meta name="description" content="">
 		<meta name="author" content="">
 	</head>
 	<body>
-		<h1>Add guests to a table</h1>
-		<form id="addToTable" name="addGuests" method="post" action="/addguest">
-			<input type="text" placeholder="add table number" name="tableno">
-			<input type="text" placeholder="add guest names" name="names">
+		<header class="row">
+			<h1 class="small-12 columns">Add guests to a table</h1>
+		</header>
+		<form class="row" id="addToTable" name="addGuests" method="post" action="/addguest">
+			<input class="small-12 columns" type="text" placeholder="Table Number" name="tableno">
+			<input class="small-12 columns" type="text" placeholder="Guest Names" name="names">
 			<button type="submit">Add</button>
 		</form>
-
-		<h2>Complete Guest List</h2>
-		<ul>
+		<header class="row">
+			<h2 class="small-12 columns">Complete Guest List</h2>
+		</header>
+		<ul class="small-12 columns">
 			<% tablelist.forEach(function(guest) { %>
 				<li><%= guest.tableno %> - <%= guest.names %></li>
 			<% }); %>
