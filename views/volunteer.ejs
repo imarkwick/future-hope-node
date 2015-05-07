@@ -11,7 +11,7 @@
 	</head>
 	<body>
 		<header class="row">
-			<h1 id= "volunteerheader" class="small-12 columns">Table No <%= number %></h1>
+			<h1 id="volunteerheader" class="small-12 columns">Table No <%= number %></h1>
 		</header>
 		<form id="mela-auction" name="addItems" method="post" action="/add-to-display">
 			<header class="row">
@@ -32,7 +32,7 @@
 				</select>
 			</div>
 			<header class="row">
-				<h3 class="small-12 columns">Select the names of table-members making a pledge</h3>
+				<h3 class="small-12 columns" id="names">Select the names of table-members making a pledge</h3>
 			</header>
 			<div class="row">
 				<select class="small-12 columns" name="names" id="guest-list" size="12" multiple>
@@ -42,14 +42,14 @@
 				</select>
 			</div>
 			<div class="row">
-				<button class="small-12 columns" id="mela-add" type="submit">Add to Display</button>
+				<button class="small-12 columns vol" id="mela-add" type="submit">Add to Display</button>
 			</div>
 		</form>
 		<form class="row" action="/volunteer-table">
-			<button class="small-12 columns" type="submit">Reselect Table Number</button>
+			<button class="small-12 columns vol" type="submit">Reselect Table Number</button>
 		</form>
 		<form class="row" action="/admin">
-			<button class="small-12 columns" type="submit">Add Guests To The Table</button>
+			<button class="small-12 columns vol" type="submit">Add Guests To The Table</button>
 		</form>
 		<script src="javascripts/jquery.js"></script>
 		<script src="javascripts/foundation.js"></script>

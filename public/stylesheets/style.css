@@ -20,12 +20,12 @@ li {
 }
 
 select#mela-item{
-	font-size: 80px;
-  height: 162px;
+	font-size: 40px;
+  height: 6rem;
 }
 
 select#guest-list{
-	font-size: 80px;
+	font-size: 60px;
 }
 
 a {
@@ -38,7 +38,7 @@ button{
 	background-color: #de5958;
 	font-size: 40px;
 	padding: 10px;
-	margin-top: 200px;
+	margin-top: 2rem;
 	margin-left: auto;
   margin-right: auto;
   display: block;
@@ -72,14 +72,21 @@ button:hover{
 	opacity: .9	;
 }
 
+button.vol {
+	height: 5rem;
+	margin-top: 1rem;
+	font-size: 36px;
+}
+
 option{
-	margin-bottom: 100px;
-	font-size: 100px;
-	min-height: 150px;
+	margin-bottom: 2rem;
+	font-size: 40px;
+	min-height: 100px;
 	max-width: 700px;
 	margin-left: auto;
 	margin-right: auto;
 	display: block;
+	text-align: center;
 }
 
 img#avatars{
@@ -95,22 +102,21 @@ img#logostart{
   margin-top: 100px;
 }
 
-option {
-	font-size: 100px;
-	max-width: 400px;
-}
-
-h2#welcome{
+h2#welcome {
 	margin-left: auto;
 	margin-right: auto;
 	text-align: center;
 	font-family: 'Love Ya Like A Sister', Helvetica;
 	font-size: 34px;
-	margin-top: 30%;
+	margin-top: 10rem;
 	margin-bottom: 50px;
 }
 
-select#selecttable{
+h3#names {
+	margin-top: 1rem;
+}
+
+select#selecttable {
 	width: 14rem;
 	height: 4rem;
 	margin-bottom: 50px;
@@ -120,13 +126,13 @@ select#selecttable{
   display: block;
 }
 
-h1#volunteerheader{
+h1#volunteerheader {
 	margin-left: auto;
 	margin-right: auto;
 	display: table;
 	margin-top: 70px;
 	margin-bottom: 50px;
-	font-size: 100px;
+	font-size: 90px;
 	font-family: 'Love Ya Like A Sister', Helvetica;
 }
 
