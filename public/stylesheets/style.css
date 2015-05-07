@@ -3,14 +3,24 @@ body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
-body#display {
-/*background-image: url(/images/intro.jpg);
+div#display {
+ background-image: url(/images/intro.jpg);
+ height: 100%;
+ width: 100%;
+ z-index: 1; 
+ position: absolute;
+ top: 0px;
+ left: 0px;
   background-size: cover;
-  display: block;*/
+  display: block;
 }
 
 a {
   color: #00B7FF;
+}
+img#avatars{
+	z-index: 2;
+	position: relative;
 }
 
 img#logostart{
