@@ -44,16 +44,29 @@ button{
   display: block;
 }
 
+/* Auction Page */
+
+h1#admin {
+	margin-left: 2rem;
+	margin-top: 2rem;
+}
+
 button#admin-add {
 	width: 12rem;
 	height: 4rem;
-	margin-left: 6rem;
 	font-size: 2rem;
 }
 
-button#buttonintro{
-	width:50px;
-	height:150px;
+form#addToTable {
+	width: 70%;
+}
+
+button#number {
+/*	width:50px;
+	height:150px;*/
+	width: 12rem;
+	height: 4rem;
+	font-size: 2rem;
 }
 
 button:hover{
@@ -94,14 +107,14 @@ h2#welcome{
 	margin-right: auto;
 	text-align: center;
 	font-family: 'Love Ya Like A Sister', Helvetica;
-	font-size: 60px;
+	font-size: 34px;
 	margin-top: 30%;
 	margin-bottom: 50px;
 }
 
 select#selecttable{
-	width: 70%;
-	height: 200px;
+	width: 14rem;
+	height: 4rem;
 	margin-bottom: 50px;
   margin-left: auto;
   margin-right: auto;
