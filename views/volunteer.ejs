@@ -13,6 +13,8 @@
 		<header class="row">
 			<h1 id="volunteerheader" class="small-12 columns">Table No <%= number %></h1>
 		</header>
+		<div id="notifications">
+		</div>
 		<form id="mela-auction" name="addItems" method="post" action="/add-to-display">
 			<header class="row">
 				<h3 class="small-12 columns">Select the item being auctioned</h3>
@@ -70,6 +72,7 @@
 		  			console.log('saved to db');
 		  		}
 		  	});
+	  	 	// $('#notifications').remove("<p class='notification'>Item & Names Successfully Added</p>");
 		  	var item = $('#mela-item').val();
 		  	var names = $('#guest-list').val();
 		  	var total = Object.keys(names).length
@@ -77,6 +80,7 @@
 		  	$('#mela-item').val('');
 		  	$('#guest-list').val('');
 		  	return false;
+
 		  });
 		</script>
 	</body>
