@@ -11,6 +11,7 @@ router.get('/admin', function(req, res) {
 	var db = req.db;
 	var collection = db.get('tablecollection');
 	collection.find({},{},function(e,docs) {
+		console.log(docs);
 		res.render('admin', {
 			tablelist : docs
 		})
