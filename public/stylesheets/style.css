@@ -4,19 +4,89 @@ body {
 }
 
 div#display {
- background-image: url(/images/intro.jpg);
- height: 100%;
- width: 100%;
- z-index: 1; 
- position: absolute;
- top: 0px;
- left: 0px;
+	background-image: url(/images/intro.jpg);
+	height: 100%;
+	width: 100%;
+	z-index: 1; 
+	position: absolute;
+	top: 0px;
+	left: 0px;
   background-size: cover;
   display: block;
 }
 
+li {
+	list-style-type: none;
+}
+
+select#mela-item{
+	font-size: 40px;
+  height: 6rem;
+}
+
+select#guest-list{
+	font-size: 60px;
+}
+
 a {
   color: #00B7FF;
+}
+
+button{
+	width: 12rem;
+	height: 4rem;
+	background-color: #de5958;
+	font-size: 40px;
+	padding: 10px;
+	margin-top: 2rem;
+	margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+/* Auction Page */
+
+h1#admin {
+	margin-left: 2rem;
+	margin-top: 2rem;
+}
+
+button#admin-add {
+	width: 12rem;
+	height: 4rem;
+	font-size: 2rem;
+}
+
+form#addToTable {
+	width: 70%;
+}
+
+button#number {
+	width: 12rem;
+	height: 4rem;
+	font-size: 2rem;
+}
+
+button:hover{
+	background-color: #d22630;
+	opacity: .9	;
+}
+
+button.vol {
+	height: 5rem;
+	margin-top: 1rem;
+	font-size: 36px;
+}
+
+option{
+	margin-bottom: 2rem;
+	font-size: 40px;
+	min-height: 100px;
+	max-width: 700px;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	text-align: center;
 }
 
 img#avatars{
@@ -30,20 +100,25 @@ img#logostart{
   margin-left: auto;
   margin-right: auto;
   margin-top: 100px;
-
 }
-h2#welcome{
+
+h2#welcome {
 	margin-left: auto;
 	margin-right: auto;
 	text-align: center;
 	font-family: 'Love Ya Like A Sister', Helvetica;
-	font-size: 60px;
-	margin-top: 30%;
+	font-size: 34px;
+	margin-top: 10rem;
 	margin-bottom: 50px;
 }
-select#selecttable{
-	width: 70%;
-	height: 200px;
+
+h3#names {
+	margin-top: 1rem;
+}
+
+select#selecttable {
+	width: 14rem;
+	height: 4rem;
 	margin-bottom: 50px;
   margin-left: auto;
   margin-right: auto;
@@ -51,15 +126,22 @@ select#selecttable{
   display: block;
 }
 
-h1#volunteerheader{
+h1#volunteerheader {
 	margin-left: auto;
 	margin-right: auto;
 	display: table;
 	margin-top: 70px;
 	margin-bottom: 50px;
-	font-size: 100px;
+	font-size: 90px;
 	font-family: 'Love Ya Like A Sister', Helvetica;
 }
+
 form#mela-auction {
 	color: #7c2529;
+}
+
+.notification {
+	color: #d22630;
+  text-align: center;
+  font-size: 20px;
 }

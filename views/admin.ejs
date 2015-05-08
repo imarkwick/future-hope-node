@@ -11,21 +11,17 @@
 	</head>
 	<body>
 		<header class="row">
-			<h1 class="small-12 columns">Add guests to a table</h1>
+			<h1 id="admin" class="small-12 columns">Add to a table</h1>
 		</header>
 		<form class="row" id="addToTable" name="addGuests" method="post" action="/addguest">
 			<input class="small-12 columns" type="text" placeholder="Table Number" name="tableno">
 			<input class="small-12 columns" type="text" placeholder="Guest Names" name="names">
-			<button type="submit">Add</button>
+			<button type="submit" id="admin-add">Add</button>
 		</form>
-		<header class="row">
+<!-- 		<header class="row">
 			<h2 class="small-12 columns">Complete Guest List</h2>
-		</header>
-		<ul class="small-12 columns">
-			<% tablelist.forEach(function(guest) { %>
-				<li><%= guest.tableno %> - <%= guest.names %></li>
-			<% }); %>
-		</ul>
+		</header> -->
+
 		<script src="javascripts/jquery.js"></script>
 		<script src="javascripts/foundation.js"></script>
 		<script src="javascripts/script.js"></script>
