@@ -13,7 +13,6 @@ var dbs = process.env.MONGOLAB_URI || 'localhost:27017/futurehope';
 var db = monk(dbs);
 
 var Tables = require('./lib/database');
-console.log(Tables);
 var tables = new Tables();
 
 var app = express();
