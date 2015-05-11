@@ -11,7 +11,11 @@
 	</head>
 	<body>
 		<div id="display">
-
+			<% if (items) { %>
+				<% items.forEach(function(image) { %>
+					<img class="wow bounceIn" height="80px" width="80px" src="images/<%= image %>" />
+				<% }); %>
+			<% }; %>
 		</div>
 		<div id="display-messages">
 		</div>	
@@ -30,18 +34,10 @@
 				array.forEach(function(image) {
 					var display = document.getElementById('display')
 					display.style.opacity = "0.4";
-
-<<<<<<< HEAD
-						var pic = '<img id="avatars" class="wow bounceIn" height="80px" width="80px" src="images/' + image + '"/>'
-				  	$('#display-messages').append(pic);
-				});
-		  });
-=======
 					var pic = '<img id="avatars" class="wow bounceIn" height="80px" width="80px" src="images/' + image + '"/>'
 			  	$('#display-messages').append(pic);
 			  });
 			});
->>>>>>> a977fb349d975998f4112d1abd02e8efcaa30532
 		</script>
 	</body>
 </html>

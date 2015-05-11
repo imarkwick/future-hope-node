@@ -26,8 +26,8 @@
 			</header>
 			<div class="row" id="selectlist">
 				<h3 class="small-12 columns" id="items">Select Item</h3>
-				<select class="small-12 columns" name="item" id="mela-item" required>
-					<option id="title">Select Auction Item</option>
+				<select class="small-12 columns" name="item" id="mela-item">
+					<option>Auction Item</option>
 					<option value="cricket.svg">Cricket Program (1 available)</option>
 					<option value="rugby.svg">Rugby Program (1 available)</option>
 					<option value="rowing.svg">Rowing</option>
@@ -45,12 +45,10 @@
 				<h3 class="small-12 columns" id="names">Select Names</h3>
 			</header>
 			<div class="row" id="guestrow">
-				<select class="small-12 columns" name="names" id="guest-list" size="12" multiple required>
-					<optgroup label="Select Names">
-						<% guests.forEach(function(name) { %>
-							<option value="<%= name %>"><%= name %></option>
-						<%	}); %>			
-					</option>
+				<select class="small-12 columns" name="names" id="guest-list" size="12" multiple>
+					<% guests.forEach(function(name) { %>
+						<option value="<%= name %>"><%= name %></option>
+					<%	}); %>			
 				</select>
 			</div>
 			<div class="row">
