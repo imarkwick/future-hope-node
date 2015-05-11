@@ -161,7 +161,14 @@ form#mela-auction {
 	color: #7c2529;
 }
 
-#notifications {
+#error {
+	display: none;
+	color: #de5958;
+  text-align: center;
+  font-size: 24px;
+}
+
+#success {
 	display: none;
 	color: #de5958;
   text-align: center;

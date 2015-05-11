@@ -17,8 +17,11 @@
 			<h1 id="volunteerheader" class="small-12 columns">Table No <%= number %></h1>
 		</header>
 		<div class="row">
-			<div class="small-12 columns" id="notifications">
+			<div class="small-12 columns" id="error">
 				<p>There was an Error. Please select BOTH aution item & guest names.</p>
+			</div>
+			<div class="small-12 columns" id="success">
+				<p>Item successfully added.</p>
 			</div>
 		</div>
 		<form id="mela-auction" name="addItems" method="post" action="/add-to-display">
@@ -89,13 +92,20 @@
 			  	console.log(item.repeat(total));
 			  	$('#mela-item').val('AUCTION ITEM');
 			  	$('#guest-list').val('');
-			  	$('#notifications').hide();
+			  	$('#success').show();
+			  	$('#error').hide();
+			  	$("html, body").animate({ scrollTop: 0 }, 200);
 		  	} else {
-		  		$('#notifications').show();
+		  		$('#error').show();
 	  		 	$("html, body").animate({ scrollTop: 0 }, 200);
 		  	};
 		  	return false;
 		  });
+		</script>
+		<script>
+			$('#mela-item').click(function() {
+				$('#success').hide();
+			});
 		</script>
 	</body>
 </html>
