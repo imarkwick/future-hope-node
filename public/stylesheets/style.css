@@ -2,7 +2,7 @@
   font-family: 'Istok Web', sans-serif;
 }
 
-body {
+body.border {
 	border: 8px solid #D22630;
 }
 
@@ -27,7 +27,7 @@ select#mela-item {
 	width: 100%;
 	text-align: center;
  	font-size: 40px;
-  	height: 6rem;
+  height: 6rem;
 }
 
 select#guest-list {
@@ -159,7 +159,6 @@ h1#volunteerheader {
 }
 
 form#mela-auction {
-	margin-top: 
 	color: #7c2529;
 }
 

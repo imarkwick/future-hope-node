@@ -9,9 +9,13 @@
 		<meta name="description" content="">
 		<meta name="author" content="">
 	</head>
-	<body>
+	<body class="border">
 		<div id="display">
-
+		<% if (items) { %>
+			<% items.forEach(function(image) { %>
+				<img class="wow bounceIn" height="80px" width="80px" src="images/<%= image %>" />
+			<% }); %>
+		<% }; %>
 		</div>
 		<div id="display-messages">
 		</div>	
