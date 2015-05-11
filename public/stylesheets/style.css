@@ -188,7 +188,7 @@ h3 {
 }
 
 h3#names{
-	margin-top: 200px;
+	margin-top: 100px;
 	font-size: 60px;
 	font-family: 'Love Ya Like A Sister', Helvetica;
 }
@@ -200,7 +200,7 @@ h3#items{
 
 
 button#mela-add {
-	margin-top: 150px;
+	margin-top: 50px;
 	height: 150px;
 	border: 3px solid black;
 	font-size: 60px;
@@ -208,19 +208,19 @@ button#mela-add {
 }
 
 section#navigationbuttons{
-	margin-top: 100px;
+	margin-top: 50px;
 }
 
 button#reselect {
 	width: 50%;
 	border:1px solid black; 
-	font-size: 20px;
+	font-size: 50px;
 	background-color: #4056F4;
 }
 button#addguests{
 	width: 50%;
 	border: 1px solid black;
-	font-size: 20px;
+	font-size: 45px;
 	background-color: #78D5D7;
 }
 
