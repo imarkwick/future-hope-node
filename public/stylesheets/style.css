@@ -1,9 +1,9 @@
 * {
   font-family: 'Istok Web', sans-serif;
+	border: 8px solid #D22630;
 }
 
 body {
-	border: 8px solid #D22630;
 }
 
 div#display {
@@ -23,7 +23,7 @@ li {
 }
 
 select#mela-item{
-	margin-top: 50px;
+	margin-top: 10px;
 	width: 100%;
 	text-align: center;
  	font-size: 40px;
@@ -189,6 +189,11 @@ h3 {
 
 h3#names{
 	margin-top: 200px;
+	font-size: 60px;
+	font-family: 'Love Ya Like A Sister', Helvetica;
+}
+
+h3#items{
 	font-size: 60px;
 	font-family: 'Love Ya Like A Sister', Helvetica;
 }
