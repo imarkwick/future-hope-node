@@ -11,24 +11,21 @@
 	</head>
 	<body class="border">
 		<center>
-		<header class="row">
-			<img id="logostart" src="images/futurelogo.jpg">
+			<header class="row">
+				<img id="logostart" src="images/futurelogo.jpg">
 
-			<h1 id="admin" class="small-12 columns">Add Guests To A Table</h1>
-		</header>
-		<form class="row" id="addToTable" name="addGuests" method="post" action="/addguest">
-			<input class="small-12 columns" type="text" placeholder="Table Number" name="tableno" id="tablenoinput">
-			<input class="small-12 columns" id="tablenoinput" type="text" placeholder="Guest Names" name="names">
-			<button type="submit" id="admin-add">Add</button>
-		</form>
+				<h1 id="admin" class="small-12 columns">Add Guests To A Table</h1>
+			</header>
+			<form class="row" id="addToTable" name="addGuests" method="post" action="/addguest">
+				<input class="small-12 columns" type="text" placeholder="Table Number" name="tableno" id="tablenoinput">
+				<input class="small-12 columns" id="tablenoinput" type="text" placeholder="Guest Names" name="names">
+				<button type="submit" id="admin-add">Add</button>
+			</form>
 
-		<form class="row" id="volunteerreturn" action="/volunteer-table">
-			<button id="voltable" type="submit">Choose Your Table</button>
-		</form>
-<!-- 		<header class="row">
-			<h2 class="small-12 columns">Complete Guest List</h2>
-		</header> -->
-	</center>
+			<form class="row" id="volunteerreturn" action="/volunteer-table">
+				<button id="voltable" type="submit">Choose Your Table</button>
+			</form>
+		</center>
 		<script src="javascripts/jquery.js"></script>
 		<script src="javascripts/foundation.js"></script>
 		<script src="javascripts/script.js"></script>
