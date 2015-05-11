@@ -162,10 +162,11 @@ form#mela-auction {
 	color: #7c2529;
 }
 
-.notification {
-	color: #d22630;
+#notifications {
+	display: none;
+	color: #de5958;
   text-align: center;
-  font-size: 20px;
+  font-size: 24px;
 }
 
 h1#volunteerheader{
