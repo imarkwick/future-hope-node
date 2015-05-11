@@ -10,8 +10,12 @@
 		<meta name="author" content="">
 	</head>
 	<body>
-
 		<div id="display">
+			<% if (items) { %>
+				<% items.forEach(function(image) { %>
+					<img class="wow bounceIn" height="80px" width="80px" src="images/<%= image %>" />
+				<% }) %>
+			<% }; %>
 		</div>
 		<div id="display-messages">
 		</div>	
@@ -22,7 +26,6 @@
 		<script src="javascripts/wow.min.js"></script>
 		<script>
 			new WOW().init();
-			
 			var socket = io();
 			socket.emit('create', 'room1');
 			socket.on('chat message', function(msg) {
@@ -32,8 +35,6 @@
 				var display = document.getElementById('display')
 				display.style.opacity = "0.4";
 					var pic = '<img id="avatars" class="wow bounceIn" height="80px" width="80px" src="images/' + image + '"/>'
-					console.log(pic);
-				
 			  	$('#display-messages').append(pic);
 				});
 		  });

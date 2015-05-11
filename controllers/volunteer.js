@@ -11,7 +11,7 @@ module.exports.controller = function(app, tables) {
 				var mynumber = req.session.table;
 				collection.find({ tableno: mynumber }, function(e, docs){
 					var guests = tables.getNames(docs);
-					res.render('volunteer', { number : mynumber, tablenames : guests });
+					res.render('volunteer', { number : mynumber, guests : guests });
 				});
 			}	
 		});

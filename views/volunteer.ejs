@@ -38,9 +38,9 @@
 			</header>
 			<div class="row">
 				<select class="small-12 columns" name="names" id="guest-list" size="12" multiple>
-					<% tablenames.forEach(function(name) { %>
-						<option value="<%= name %>"><%= name %></option>
-					<%	}); %>
+						<% guests.forEach(function(name) { %>
+							<option value="<%= name %>"><%= name %></option>
+						<%	}); %>
 				</select>
 			</div>
 			<div class="row">
@@ -72,15 +72,13 @@
 		  			console.log('saved to db');
 		  		}
 		  	});
-	  	 	// $('#notifications').remove("<p class='notification'>Item & Names Successfully Added</p>");
 		  	var item = $('#mela-item').val();
 		  	var names = $('#guest-list').val();
 		  	var total = Object.keys(names).length
 		  	socket.emit('chat message', item.repeat(total));
-		  	$('#mela-item').val('');
+		  	$('#mela-item').val('AUCTION ITEM');
 		  	$('#guest-list').val('');
 		  	return false;
-
 		  });
 		</script>
 	</body>
