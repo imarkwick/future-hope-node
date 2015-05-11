@@ -1,9 +1,9 @@
 * {
   font-family: 'Istok Web', sans-serif;
-	border: 8px solid #D22630;
 }
 
 body {
+	border: 8px solid #D22630;
 }
 
 div#display {
@@ -54,7 +54,7 @@ button{
 
 h1#admin {
 	margin-left: 2rem;
-	margin-top: 30rem;
+	margin-top: 15rem;
 	padding-bottom: 10px;
 }
 

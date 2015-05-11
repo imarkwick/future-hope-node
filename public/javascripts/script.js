@@ -1,8 +1,5 @@
 $(document).ready(function() {
 
-  // Multi-select form
-
-
   var selected = {};
   $('#guest-list').click(function(e) {
     var $this = $(this),
@@ -20,4 +17,9 @@ $(document).ready(function() {
     }
     return false;
   });
+
+  String.prototype.repeat = function(num) {
+    return new Array(num + 1).join(this + ',');
+  };
 });
+
