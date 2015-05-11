@@ -62,9 +62,6 @@
 		<script src="/socket.io/socket.io.js"></script>
 		<script>
 		  var socket = io();
-	  	String.prototype.repeat = function(num) {
-	  		return new Array(num + 1).join(this + ',');
-	  	};
 		  $('#mela-auction').submit(function(e) {
 		  	e.preventDefault();
 		  	var item = $('#mela-item').val();
@@ -80,6 +77,7 @@
 			  	});
 			  	var total = Object.keys(names).length
 			  	socket.emit('chat message', item.repeat(total));
+			  	console.log(item.repeat(total));
 			  	$('#mela-item').val('AUCTION ITEM');
 			  	$('#guest-list').val('');
 			  	$('#notifications').hide();
