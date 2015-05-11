@@ -44,11 +44,11 @@
 				<h3 class="small-12 columns" id="names">Select Names</h3>
 			</header>
 			<div class="row" id="guestrow">
-				<select class="small-10 columns" name="names" id="guest-list" value="" size="12" multiple required>
+				<select class="small-12 columns" name="names" id="guest-list" size="12" multiple required>
 					<optgroup label="Select Names">
 						<% guests.forEach(function(name) { %>
 							<option value="<%= name %>"><%= name %></option>
-						<%	}); %>
+						<%	}); %>			
 					</option>
 				</select>
 			</div>

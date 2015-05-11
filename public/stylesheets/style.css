@@ -22,7 +22,7 @@ li {
 	list-style-type: none;
 }
 
-select#mela-item{
+select#mela-item {
 	margin-top: 50px;
 	width: 100%;
 	text-align: center;
@@ -30,7 +30,7 @@ select#mela-item{
   	height: 6rem;
 }
 
-select#guest-list{
+select#guest-list {
 	font-size: 60px;
 	width: 100%;
 }
@@ -39,7 +39,7 @@ a {
   color: #00B7FF;
 }
 
-button{
+button {
 	width: 12rem;
 	height: 4rem;
 	background-color: #de5958;
@@ -67,6 +67,7 @@ button#admin-add {
 form#addToTable {
 	width: 70%;
 }
+
 form#volunteerreturn {
 	margin-top: 100px;
 	width: 70%;
@@ -78,11 +79,11 @@ input#tablenoinput {
 	text-align: center;
 }
 
-input#namesinput{
+input#namesinput {
 	height: 100px;
 }
 
-button#voltable{
+button#voltable {
 	height: 150px;
 	width: 300px;
 }
@@ -93,7 +94,7 @@ button#number {
 	font-size: 2rem;
 }
 
-button:hover{
+button:hover {
 	background-color: #d22630;
 	opacity: .9	;
 }
@@ -104,7 +105,7 @@ button.vol {
 	font-size: 36px;
 }
 
-option{
+option {
 	margin-bottom: 2rem;
 	font-size: 40px;
 	min-height: 100px;
@@ -115,12 +116,12 @@ option{
 	text-align: center;
 }
 
-img#avatars{
+img#avatars {
 	z-index: 2;
 	position: relative;
 }
 
-img#logostart{
+img#logostart {
   height: 200px;
   display: block;
   margin-left: auto;
@@ -169,7 +170,7 @@ form#mela-auction {
   font-size: 24px;
 }
 
-h1#volunteerheader{
+h1#volunteerheader {
 	margin-left: auto;
 	margin-right: auto;
 	text-align: center;
@@ -187,22 +188,20 @@ h3 {
 	text-align: center;
 }
 
-h3#names{
+h3#names {
 	margin-top: 200px;
 	font-size: 60px;
 	font-family: 'Love Ya Like A Sister', Helvetica;
 }
-
 
 button#mela-add {
 	margin-top: 150px;
 	height: 150px;
 	border: 3px solid black;
 	font-size: 60px;
-
 }
 
-section#navigationbuttons{
+section#navigationbuttons {
 	margin-top: 100px;
 }
 
@@ -212,7 +211,8 @@ button#reselect {
 	font-size: 20px;
 	background-color: #4056F4;
 }
-button#addguests{
+
+button#addguests {
 	width: 50%;
 	border: 1px solid black;
 	font-size: 20px;
