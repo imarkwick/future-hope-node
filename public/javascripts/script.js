@@ -2,6 +2,7 @@ $(document).ready(function() {
 
   // Multi-select form
 
+
   var selected = {};
   $('#guest-list').click(function(e) {
     var $this = $(this),

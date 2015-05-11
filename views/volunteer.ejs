@@ -6,53 +6,65 @@
 		<link rel="stylesheet" href="stylesheets/style.css"/>
 		<link rel="stylesheet" href="stylesheets/foundation.css" />
 		<link href='http://fonts.googleapis.com/css?family=Roboto:400,300|Love+Ya+Like+A+Sister' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Istok+Web' rel='stylesheet' type='text/css'>
 		<meta name="description" content="">
 		<meta name="author" content="">
 	</head>
 	<body>
 		<header class="row">
+			<img id="logomain" src="images/futurelogo.jpg">
+
 			<h1 id="volunteerheader" class="small-12 columns">Table No <%= number %></h1>
 		</header>
 		<div id="notifications">
 		</div>
 		<form id="mela-auction" name="addItems" method="post" action="/add-to-display">
 			<header class="row">
-				<h3 class="small-12 columns">Select the item being auctioned</h3>
 			</header>
-			<div class="row">
-				<select class="small-12 columns" name="item" id="mela-item">
-					<option>Auction item</option>
+			<div class="row" id="selectlist">
+				<select class="small-12 columns" name="item" id="mela-item" required>
+					<option id="title">Select Auction Item</option>
 					<option value="cricket.svg">Cricket Program (1 available)</option>
 					<option value="rugby.svg">Rugby Program (1 available)</option>
+					<option value="rowing.svg">Rowing</option>
+					<option value="football.svg">Football</option>
 					<option value="homes.svg">Home with a House-Parent</option>
 					<option value="teacher1year.svg">Teacher (1 year)</option>
 					<option value="childhood1year.svg">Childhood (1 year)</option>
 					<option value="degree.svg">University Degree</option>
-					<option value="teacher1month.svg">Teacher (1 month)</option>
+					<option value="teacher1month.svg">Education (6 months)</option>
 					<option value="childhood1month.svg">Childhood (1 month)</option>
 					<option value="activities.svg">Activities</option>
 				</select>
 			</div>
 			<header class="row">
-				<h3 class="small-12 columns" id="names">Select the names of table-members making a pledge</h3>
+				<h3 class="small-12 columns" id="names">Select Names</h3>
 			</header>
-			<div class="row">
-				<select class="small-12 columns" name="names" id="guest-list" size="12" multiple>
+			<div class="row" id="guestrow">
+				<select class="small-10 columns" name="names" id="guest-list" value="" size="12" multiple required>
+					<optgroup label="Select Names">
+					<options disabled selected class="hidden">select</options>
+
 					<% tablenames.forEach(function(name) { %>
-						<option value="<%= name %>"><%= name %></option>
+						<option placeholder="Names" value="<%= name %>"><%= name %></option>
 					<%	}); %>
+					</option>
 				</select>
 			</div>
 			<div class="row">
 				<button class="small-12 columns vol" id="mela-add" type="submit">Add to Display</button>
 			</div>
 		</form>
-		<form class="row" action="/volunteer-table">
-			<button class="small-12 columns vol" type="submit">Reselect Table Number</button>
+		<section class="small-12 columns" >
+		<section class="row" id="navigationbuttons">
+		<form action="/volunteer-table">
+			<button class="small-12 columns vol" id="reselect" type="submit">Reselect Table</button>
 		</form>
-		<form class="row" action="/admin">
-			<button class="small-12 columns vol" type="submit">Add Guests To The Table</button>
+		<form action="/admin">
+			<button class="small-12 columns vol" id="addguests" type="submit">Add Guests To Table</button>
 		</form>
+	</section>
+	</section>
 		<script src="javascripts/jquery.js"></script>
 		<script src="javascripts/foundation.js"></script>
 		<script src="javascripts/script.js"></script>
