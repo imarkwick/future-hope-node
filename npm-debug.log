@@ -1,0 +1,183 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'install', 'magic' ]
+2 info using npm@2.7.5
+3 info using node@v0.12.2
+4 verbose node symlink /usr/local/bin/node
+5 silly cache add args [ 'magic', null ]
+6 verbose cache add spec magic
+7 silly cache add parsed spec { raw: 'magic',
+7 silly cache add   scope: null,
+7 silly cache add   name: 'magic',
+7 silly cache add   rawSpec: '',
+7 silly cache add   spec: '*',
+7 silly cache add   type: 'range' }
+8 verbose addNamed magic@*
+9 silly addNamed semver.valid null
+10 silly addNamed semver.validRange *
+11 silly addNameRange { name: 'magic', range: '*', hasData: false }
+12 silly mapToRegistry name magic
+13 silly mapToRegistry using default registry
+14 silly mapToRegistry registry https://registry.npmjs.org/
+15 silly mapToRegistry uri https://registry.npmjs.org/magic
+16 verbose addNameRange registry:https://registry.npmjs.org/magic not in flight; fetching
+17 verbose request uri https://registry.npmjs.org/magic
+18 verbose request no auth needed
+19 info attempt registry request try #1 at 13:15:44
+20 verbose request id 4390e7c243ea1628
+21 http request GET https://registry.npmjs.org/magic
+22 http 200 https://registry.npmjs.org/magic
+23 silly get cb [ 200,
+23 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+23 silly get     etag: '"AHZ7QHIIUWGA34FHI240FSRQN"',
+23 silly get     'content-type': 'application/json',
+23 silly get     'cache-control': 'max-age=60',
+23 silly get     'content-length': '3692',
+23 silly get     'accept-ranges': 'bytes',
+23 silly get     date: 'Tue, 12 May 2015 12:15:46 GMT',
+23 silly get     via: '1.1 varnish',
+23 silly get     age: '0',
+23 silly get     connection: 'keep-alive',
+23 silly get     'x-served-by': 'cache-lhr6328-LHR',
+23 silly get     'x-cache': 'MISS',
+23 silly get     'x-cache-hits': '0',
+23 silly get     'x-timer': 'S1431432946.414693,VS0,VE164',
+23 silly get     vary: 'Accept' } ]
+24 verbose get saving magic to /Users/claretrembath/.npm/registry.npmjs.org/magic/.cache.json
+25 silly addNameRange number 2 { name: 'magic', range: '*', hasData: true }
+26 silly addNameRange versions [ 'magic', [ '1.0.0', '1.0.1', '1.0.2', '1.0.3' ] ]
+27 verbose addNamed magic@1.0.3
+28 silly addNamed semver.valid 1.0.3
+29 silly addNamed semver.validRange 1.0.3
+30 silly mapToRegistry name magic
+31 silly mapToRegistry using default registry
+32 silly mapToRegistry registry https://registry.npmjs.org/
+33 silly mapToRegistry uri https://registry.npmjs.org/magic
+34 verbose addRemoteTarball https://registry.npmjs.org/magic/-/magic-1.0.3.tgz not in flight; adding
+35 verbose addRemoteTarball [ 'https://registry.npmjs.org/magic/-/magic-1.0.3.tgz',
+35 verbose addRemoteTarball   '6181772b7d84197fe9bd79db20382b336aa1151a' ]
+36 info retry fetch attempt 1 at 13:15:46
+37 info attempt registry request try #1 at 13:15:46
+38 http fetch GET https://registry.npmjs.org/magic/-/magic-1.0.3.tgz
+39 http fetch 200 https://registry.npmjs.org/magic/-/magic-1.0.3.tgz
+40 silly fetchAndShaCheck shasum 6181772b7d84197fe9bd79db20382b336aa1151a
+41 verbose addTmpTarball /var/folders/t3/cbzb3fd10ks1svlg2mrr38z00000gn/T/npm-59036-a0d3c834/registry.npmjs.org/magic/-/magic-1.0.3.tgz not in flight; adding
+42 verbose addTmpTarball already have metadata; skipping unpack for magic@1.0.3
+43 silly cache afterAdd magic@1.0.3
+44 verbose afterAdd /Users/claretrembath/.npm/magic/1.0.3/package/package.json not in flight; writing
+45 verbose afterAdd /Users/claretrembath/.npm/magic/1.0.3/package/package.json written
+46 silly install resolved [ { name: 'magic',
+46 silly install resolved     description: 'Magic Method/getter/setters for Node.JS (Basic ES5 Harmony Proxies)',
+46 silly install resolved     keywords:
+46 silly install resolved      [ 'harmony',
+46 silly install resolved        'proxy',
+46 silly install resolved        'proxies',
+46 silly install resolved        '__get',
+46 silly install resolved        '__set',
+46 silly install resolved        '__call',
+46 silly install resolved        'getter',
+46 silly install resolved        'setter' ],
+46 silly install resolved     version: '1.0.3',
+46 silly install resolved     homepage: 'http://aikar.co/magic',
+46 silly install resolved     repository: { type: 'git', url: 'git://github.com/aikar/magic.git' },
+46 silly install resolved     author: { name: 'Aikar', email: 'aikar@aikar.co' },
+46 silly install resolved     main: 'lib/magic.js',
+46 silly install resolved     directories: { lib: 'lib' },
+46 silly install resolved     devDependencies: { vows: '' },
+46 silly install resolved     scripts:
+46 silly install resolved      { test: './runTest.js',
+46 silly install resolved        preinstall: 'make makelibs',
+46 silly install resolved        preuninstall: 'make clean' },
+46 silly install resolved     engines: { node: '>=0.4.0' },
+46 silly install resolved     _id: 'magic@1.0.3',
+46 silly install resolved     _engineSupported: true,
+46 silly install resolved     _npmVersion: '0.3.18',
+46 silly install resolved     _nodeVersion: 'v0.5.0-pre',
+46 silly install resolved     files: [ '' ],
+46 silly install resolved     _defaultsLoaded: true,
+46 silly install resolved     dist:
+46 silly install resolved      { shasum: '6181772b7d84197fe9bd79db20382b336aa1151a',
+46 silly install resolved        tarball: 'http://registry.npmjs.org/magic/-/magic-1.0.3.tgz',
+46 silly install resolved        bin: [Object] },
+46 silly install resolved     _shasum: '6181772b7d84197fe9bd79db20382b336aa1151a',
+46 silly install resolved     _resolved: 'https://registry.npmjs.org/magic/-/magic-1.0.3.tgz',
+46 silly install resolved     _from: 'magic@*' } ]
+47 info install magic@1.0.3 into /Users/claretrembath/Desktop/Projects/future-hope-node
+48 info installOne magic@1.0.3
+49 verbose installOne of magic to /Users/claretrembath/Desktop/Projects/future-hope-node not in flight; installing
+50 verbose lock using /Users/claretrembath/.npm/_locks/magic-3a11551ac67a7923.lock for /Users/claretrembath/Desktop/Projects/future-hope-node/node_modules/magic
+51 silly install write writing magic 1.0.3 to /Users/claretrembath/Desktop/Projects/future-hope-node/node_modules/magic
+52 silly cache addNamed cb magic@1.0.3
+53 verbose unbuild node_modules/magic
+54 silly gentlyRm /Users/claretrembath/Desktop/Projects/future-hope-node/node_modules/magic is being purged from base /Users/claretrembath/Desktop/Projects/future-hope-node
+55 verbose gentlyRm don't care about contents; nuking /Users/claretrembath/Desktop/Projects/future-hope-node/node_modules/magic
+56 verbose tar unpack /Users/claretrembath/.npm/magic/1.0.3/package.tgz
+57 verbose tar unpacking to /Users/claretrembath/Desktop/Projects/future-hope-node/node_modules/magic
+58 silly gentlyRm /Users/claretrembath/Desktop/Projects/future-hope-node/node_modules/magic is being purged
+59 verbose gentlyRm don't care about contents; nuking /Users/claretrembath/Desktop/Projects/future-hope-node/node_modules/magic
+60 silly gunzTarPerm modes [ '755', '644' ]
+61 silly gunzTarPerm extractEntry
+62 silly gunzTarPerm extractEntry .gitignore
+63 silly gunzTarPerm extractEntry src/
+64 silly gunzTarPerm extractEntry src/wscript
+65 silly gunzTarPerm extractEntry src/magic.cc
+66 silly gunzTarPerm extractEntry package.json
+67 silly gunzTarPerm extractEntry index.js
+68 silly gunzTarPerm extractEntry README.markdown
+69 silly gunzTarPerm extractEntry .npmignore
+70 silly gunzTarPerm extractEntry runTest.js
+71 silly gunzTarPerm extractEntry examples/
+72 silly gunzTarPerm extractEntry examples/autoloader/
+73 silly gunzTarPerm extractEntry examples/autoloader/bar/
+74 silly gunzTarPerm extractEntry examples/autoloader/bar/baz.js
+75 silly gunzTarPerm extractEntry examples/autoloader/bar/index.js
+76 silly gunzTarPerm extractEntry examples/autoloader/foo.js
+77 silly gunzTarPerm extractEntry examples/autoloader.js
+78 silly gunzTarPerm extractEntry examples/magic.js
+79 silly gunzTarPerm extractEntry examples/node_modules/
+80 silly gunzTarPerm extractEntry examples/node_modules/hello.js
+81 silly gunzTarPerm extractEntry Makefile
+82 silly gunzTarPerm extractEntry lib/
+83 silly gunzTarPerm extractEntry lib/magic.js
+84 silly gunzTarPerm extractEntry LICENSE
+85 silly gunzTarPerm extractEntry test/
+86 silly gunzTarPerm extractEntry test/magic.js
+87 info preinstall magic@1.0.3
+88 verbose unsafe-perm in lifecycle true
+89 info magic@1.0.3 Failed to exec preinstall script
+90 verbose unlock done using /Users/claretrembath/.npm/_locks/magic-3a11551ac67a7923.lock for /Users/claretrembath/Desktop/Projects/future-hope-node/node_modules/magic
+91 verbose stack Error: magic@1.0.3 preinstall: `make makelibs`
+91 verbose stack Exit status 2
+91 verbose stack     at EventEmitter.<anonymous> (/usr/local/lib/node_modules/npm/lib/utils/lifecycle.js:213:16)
+91 verbose stack     at EventEmitter.emit (events.js:110:17)
+91 verbose stack     at ChildProcess.<anonymous> (/usr/local/lib/node_modules/npm/lib/utils/spawn.js:14:12)
+91 verbose stack     at ChildProcess.emit (events.js:110:17)
+91 verbose stack     at maybeClose (child_process.js:1015:16)
+91 verbose stack     at Process.ChildProcess._handle.onexit (child_process.js:1087:5)
+92 verbose pkgid magic@1.0.3
+93 verbose cwd /Users/claretrembath/Desktop/Projects/future-hope-node
+94 error Darwin 14.1.0
+95 error argv "node" "/usr/local/bin/npm" "install" "magic"
+96 error node v0.12.2
+97 error npm  v2.7.5
+98 error code ELIFECYCLE
+99 error magic@1.0.3 preinstall: `make makelibs`
+99 error Exit status 2
+100 error Failed at the magic@1.0.3 preinstall script 'make makelibs'.
+100 error This is most likely a problem with the magic package,
+100 error not with npm itself.
+100 error Tell the author that this fails on your system:
+100 error     make makelibs
+100 error You can get their info via:
+100 error     npm owner ls magic
+100 error There is likely additional logging output above.
+101 verbose exit [ 1, true ]
+102 verbose unbuild node_modules/magic
+103 info preuninstall magic@1.0.3
+104 verbose unsafe-perm in lifecycle true
+105 info uninstall magic@1.0.3
+106 verbose unbuild rmStuff magic@1.0.3 from /Users/claretrembath/Desktop/Projects/future-hope-node/node_modules
+107 info postuninstall magic@1.0.3
+108 silly gentlyRm /Users/claretrembath/Desktop/Projects/future-hope-node/node_modules/magic is being purged from base /Users/claretrembath/Desktop/Projects/future-hope-node
+109 verbose gentlyRm don't care about contents; nuking /Users/claretrembath/Desktop/Projects/future-hope-node/node_modules/magic
+110 silly vacuum-fs purging /Users/claretrembath/Desktop/Projects/future-hope-node/node_modules/magic
+111 silly vacuum-fs quitting because other entries in /Users/claretrembath/Desktop/Projects/future-hope-node/node_modules
