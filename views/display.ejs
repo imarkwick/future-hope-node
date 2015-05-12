@@ -47,7 +47,9 @@
 			  });
 				var loadsofimg = document.getElementsByTagName('img');
 				if (loadsofimg.length > 100) {
+					setTimeout(function(){
 					$('#thankyou').show();
+				}, 2000);
 				} else {
 					console.log("notyet");
 				}
