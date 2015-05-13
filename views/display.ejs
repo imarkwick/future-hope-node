@@ -41,7 +41,7 @@
 			socket.emit('create', 'room1');
 			socket.on('names message', function(msg) {
 				var names = msg;
-				$('#disp').append('<li id="names-list">' + msg + '</li>');
+				$('#disp').append('<li id="names-list">' + msg + ', </li>');
 			});
 			socket.on('chat message', function(msg) {
 				var string = msg.substring(0, msg.length -1);
