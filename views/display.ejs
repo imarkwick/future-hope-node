@@ -24,7 +24,11 @@
 		</div>
 		<div id="display-messages">
 		</div>
+
+			<h2 id="thankyou">Thanks To : </h2>
 		<div id="display-names">
+			<marquee behavior="scroll"  id="disp" direction="left"> </marquee>
+
 		</div>
 		<script src="javascripts/jquery.js"></script>
 		<script src="javascripts/foundation.js"></script>
@@ -37,7 +41,7 @@
 			socket.emit('create', 'room1');
 			socket.on('names message', function(msg) {
 				var names = msg;
-				$('#display-names').append('<li>' + msg + '</li>');
+				$('#disp').append('<li id="names-list">' + msg + '</li>');
 			});
 			socket.on('chat message', function(msg) {
 				var string = msg.substring(0, msg.length -1);
@@ -56,13 +60,13 @@
 			  		
 			  });
 				var loadsofimg = document.getElementsByTagName('img');
-				if (loadsofimg.length > 100) {
-					setTimeout(function(){
-					$('#thankyou').show();
-				}, 2000);
-				} else {
-					console.log("notyet");
-				}
+				// if (loadsofimg.length > 100) {
+				// 	setTimeout(function(){
+				// 	$('#thankyou').show();
+				// }, 2000);
+				// } else {
+				// 	console.log("notyet");
+				// }
 			});
 		</script>
 	</body>

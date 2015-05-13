@@ -8,7 +8,7 @@ body.border {
 
 div#display {
 	background-image: url(/images/intro.jpg);
-	height: 100%;
+	height: 92%;
 	width: 100%;
 	z-index: 1; 
 	position: absolute;
@@ -247,4 +247,39 @@ div#thankyou{
     font-size: 90px;
     padding-top: 25%;
     text-align: center;
+}
+
+div#display-names {
+    background-color: red;
+    z-index: 10;
+    width: 80%;
+    height: 8%;
+    bottom: 0;
+    position: fixed;
+    text-align: center;
+    float: right;
+    margin-left: 20%;
+        }
+
+h2#thankyou {
+    font-family: 'Love Ya Like A Sister', Helvetica;
+    background-color: red;
+    z-index: 10;
+    width: 20%;
+    height: 8%;
+    bottom: 0;
+    position: absolute;
+    float: left;
+    text-align: center;
+    margin-bottom: 0;
+    font-size: 145px;
+}
+
+li#names-list {
+	font-family: 'Love Ya Like A Sister', Helvetica;
+	display: inline-block;
+	font-size: 100px;
+	z-index: 20;
+	line-height: inherit;
+
 }
