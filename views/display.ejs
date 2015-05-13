@@ -39,6 +39,9 @@
 				array.forEach(function(image) {
 					var display = document.getElementById('display')
 					display.style.opacity = "0.4";
+					  function randomFrom(array) {
+            return array[Math.floor(Math.random() * array.length)];
+          }
 					var effect = randomFrom([' rotateIn', ' flash', ' bounceIn', ' pulse', ' tada', ' zoomIn']);
 					var pic = '<img id="avatars" class="animated' + effect + '" height="80px" width="80px" src="images/' + image + '"/>'
 					console.log(effect)
