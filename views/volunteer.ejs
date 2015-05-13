@@ -51,7 +51,8 @@
 				<select class="small-12 columns" name="names" id="guest-list" size="12" multiple>
 					<% guests.forEach(function(name) { %>
 						<option value="<%= name %>"><%= name %></option>
-					<%	}); %>			
+					<%	}); %>	
+					<option value=" Anonymous">Anonymous</option>		
 				</select>
 			</div>
 			<div class="row">

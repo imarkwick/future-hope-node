@@ -22,15 +22,17 @@
 			We've reached 100 items 
 			Thankyou Everyone!
 		</div> -->
-		<div id="display-big-messages">
+		<div id="display-rugby-messages">
+		</div>
+		<div id="display-cricket-messages">
 		</div>
 		<div id="display-messages">
 		</div>
-
-			<h2 id="thankyou">Thanks To : </h2>
+		<div id="display-football-messages">
+		</div>
+		<h2 id="thankyou">Thanks To : </h2>
 		<div id="display-names">
 			<marquee behavior="scroll"  id="disp" direction="left"> </marquee>
-
 		</div>
 		<script src="javascripts/jquery.js"></script>
 		<script src="javascripts/foundation.js"></script>
@@ -57,11 +59,13 @@
 					var effect = randomFrom([' bounceIn', ' zoomIn', ' bounceIn', ' zoomIn']);
 					var pic = '<img id="avatars" class="animated' + effect + '" height="80px" width="80px" src="images/' + image + '"/>';
 					var bigPic = '<img id="avatars" class="animated' + effect + '" height="160px" width="160px" src="images/' + image + '"/>';
-
 					if (image === 'rugby.svg') {
-				  	$('#display-big-messages').append(bigPic);		
+				  	$('#display-rugby-messages').append(bigPic);		
+					} else if (image === 'cricket.svg') {
+						$('#display-cricket-messages').append(bigPic);
+					} else if (image === 'football.svg') {
+						$('#display-football-messages').append(bigPic);
 					} else {
-						console.log(effect)
 				  	$('#display-messages').append(pic);
 				  };
 			  });
