@@ -250,7 +250,7 @@ div#thankyou{
 }
 
 div#display-names {
-    background-color: red;
+    background-color: #f52d2d;
     z-index: 10;
     width: 80%;
     height: 8%;
@@ -263,7 +263,7 @@ div#display-names {
 
 h2#thankyou {
     font-family: 'Love Ya Like A Sister', Helvetica;
-    background-color: red;
+    background-color: #f52d2d;
     z-index: 10;
     width: 20%;
     height: 8%;
