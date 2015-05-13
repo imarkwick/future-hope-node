@@ -282,5 +282,7 @@ li#names-list {
 	z-index: 20;
 	line-height: inherit;
     color: white;
-
+}
+div#display-big-messages {
+	float: left;
 }
