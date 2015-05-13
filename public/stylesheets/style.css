@@ -237,11 +237,13 @@ button#voltable {
 
 p#success-notification {
 	color: #50ed42;
+    font-size: 52px;
+
 }
 
-div#thankyou{
+div#thankseveryone{
 	font-family: 'Love Ya Like A Sister', Helvetica;
-	display:hidden;
+	display:none;
     z-index: 105;
     position: inherit;
     font-size: 90px;

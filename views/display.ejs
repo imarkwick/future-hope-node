@@ -18,10 +18,10 @@
 				<% }); %>
 			<% }; %>
 		</div>
-		<!-- <div class="wow tada" id="thankyou">
+		<div class="wow tada" id="thankseveryone">
 			We've reached 100 items 
 			Thankyou Everyone!
-		</div> -->
+		</div>
 		<div id="display-messages">
 		</div>
 
@@ -60,13 +60,12 @@
 			  		
 			  });
 				var loadsofimg = document.getElementsByTagName('img');
-				// if (loadsofimg.length > 100) {
-				// 	setTimeout(function(){
-				// 	$('#thankyou').show();
-				// }, 2000);
-				// } else {
-				// 	console.log("notyet");
-				// }
+				if (loadsofimg.length > 100) {
+					$('#thankseveryone').show();
+				});
+				} else {
+					console.log("notyet");
+				}
 			});
 		</script>
 	</body>
