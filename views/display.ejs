@@ -51,9 +51,9 @@
 					display.style.opacity = "0.4";
 
 					  function randomFrom(array) {
-            return array[Math.floor(Math.random() * array.length)];
-          }
-					var effect = randomFrom([' rotateIn', ' flash', ' bounceIn', ' pulse', ' tada', ' zoomIn']);
+			            return array[Math.floor(Math.random() * array.length)];
+			          }
+					var effect = randomFrom([' bounceIn', ' zoomIn', ' bounceIn', ' zoomIn']);
 					var pic = '<img id="avatars" class="animated' + effect + '" height="80px" width="80px" src="images/' + image + '"/>'
 					console.log(effect)
 			  	$('#display-messages').append(pic);

@@ -247,7 +247,7 @@ div#thankyou{
 }
 
 div#display-names {
-    background-color: red;
+    background-color: #f52d2d;
     z-index: 10;
     width: 80%;
     height: 8%;
@@ -256,12 +256,14 @@ div#display-names {
     text-align: center;
     float: right;
     margin-left: 20%;
+    opacity: .9;
         }
 
 h2#thankyou {
     font-family: 'Love Ya Like A Sister', Helvetica;
-    background-color: red;
+    background-color: #f52d2d;
     z-index: 10;
+    color: white;
     width: 20%;
     height: 8%;
     bottom: 0;
@@ -270,6 +272,7 @@ h2#thankyou {
     text-align: center;
     margin-bottom: 0;
     font-size: 35px;
+    opacity: .9;
 }
 
 li#names-list {
@@ -278,4 +281,6 @@ li#names-list {
 	font-size: 30px;
 	z-index: 20;
 	line-height: inherit;
+    color: white;
+
 }
