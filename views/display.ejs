@@ -6,6 +6,7 @@
 		<link rel="stylesheet" href="stylesheets/style.css"/>
 		<link rel="stylesheet" href="stylesheets/foundation.css" />
 		<link rel="stylesheet" href="stylesheets/animate.css">
+		<link href='http://fonts.googleapis.com/css?family=Roboto:400,300|Love+Ya+Like+A+Sister' rel='stylesheet' type='text/css'>
 		<meta name="description" content="">
 		<meta name="author" content="">
 	</head>
@@ -16,6 +17,10 @@
 					<img class="wow bounceIn" height="80px" width="80px" src="images/<%= image %>" />
 				<% }); %>
 			<% }; %>
+		</div>
+		<div class="wow tada" id="thankyou">
+			We've reached 100 items 
+			Thankyou Everyone!
 		</div>
 		<div id="display-messages">
 		</div>	
@@ -34,9 +39,20 @@
 				array.forEach(function(image) {
 					var display = document.getElementById('display')
 					display.style.opacity = "0.4";
-					var pic = '<img id="avatars" class="wow bounceIn" height="80px" width="80px" src="images/' + image + '"/>'
+					var effect = randomFrom([' rotateIn', ' flash', ' bounceIn', ' pulse', ' tada', ' zoomIn']);
+					var pic = '<img id="avatars" class="animated' + effect + '" height="80px" width="80px" src="images/' + image + '"/>'
+					console.log(effect)
 			  	$('#display-messages').append(pic);
+			  		
 			  });
+				var loadsofimg = document.getElementsByTagName('img');
+				if (loadsofimg.length > 100) {
+					setTimeout(function(){
+					$('#thankyou').show();
+				}, 2000);
+				} else {
+					console.log("notyet");
+				}
 			});
 		</script>
 	</body>
