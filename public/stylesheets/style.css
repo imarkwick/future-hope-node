@@ -272,14 +272,13 @@ h2#thankyou {
     float: left;
     text-align: center;
     margin-bottom: 0;
-    font-size: 145px;
+    font-size: 35px;
 }
 
 li#names-list {
 	font-family: 'Love Ya Like A Sister', Helvetica;
 	display: inline-block;
-	font-size: 100px;
+	font-size: 30px;
 	z-index: 20;
 	line-height: inherit;
-
 }
