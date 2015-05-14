@@ -335,13 +335,14 @@ img.futurehope {
 	display: none;
 	margin: auto;
 	z-index: 100;
-	padding-top: 50px;
+	border: 6px solid black;
 }
 
 #future-hope-photos {
 	width: 100%;
 	margin-right: auto;
 	margin-left: auto;
+	padding-top: 50px;
 }
 
 @media screen and (max-width: 1000px) { 
