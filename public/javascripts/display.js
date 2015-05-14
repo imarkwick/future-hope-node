@@ -9,6 +9,7 @@ $(document).ready(function() {
 		$('#display').css("opacity", ".3");
 		$('#display-names').css("opacity", ".4");
 		$('#thankyou').css("opacity", ".4");
+		$('.socket-images').css("opacity", ".4");
 	});
 
 	socket.on('tim message', function(msg) {
@@ -16,6 +17,7 @@ $(document).ready(function() {
 		$('#display').css("opacity", ".3");
 		$('#display-names').css("opacity", ".4");
 		$('#thankyou').css("opacity", ".4");
+		$('.socket-images').css("opacity", ".4");
 	});
 
 	socket.on('school message', function(msg) {
@@ -23,13 +25,15 @@ $(document).ready(function() {
 		$('#display').css("opacity", ".3");
 		$('#display-names').css("opacity", ".4");
 		$('#thankyou').css("opacity", ".4");
+		$('.socket-images').css("opacity", ".4");
 	});
 
 	socket.on('closeimg message', function(msg) {
 		$('.futurehope').hide();
-		$('#display').css("opacity", "1");
+		$('#display').css("opacity", ".4");
 		$('#display-names').css("opacity", "1");
 		$('#thankyou').css("opacity", "1");
+		$('.socket-images').css("opacity", "1");
 	});
 
 	socket.on('names message', function(msg) {
