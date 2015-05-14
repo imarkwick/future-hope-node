@@ -39,7 +39,7 @@ button{
 	width: 12rem;
 	height: 4rem;
 	background-color: #de5958;
-	font-size: 40px;
+	font-size: 34px;
 	padding: 10px;
 	margin-left: auto;
   margin-right: auto;
@@ -63,11 +63,27 @@ button#admin-add {
 form#addToTable {
 	width: 70%;
 }
+
 form#volunteerreturn {
 	margin-top: 2rem;
 	margin-bottom: 2rem;
 	width: 70%;
 }
+
+h1#photos-h1 {
+	margin-bottom: 2rem;
+}
+
+button.tiny {
+	font-size: 20px;
+  margin-left: 0.5rem;
+  width: 20rem;
+}
+
+button#close {
+	background-color: #de5958;
+}
+
 
 input#tablenoinput {
 	height: 100px;
@@ -318,14 +334,15 @@ div#display-football-messages {
 	}
 }
 
-img#photo1 {
+img.futurehope {
 	z-index: 50;
-	height: 360px;
-	width: 240px;
-	margin-left: auto;
-	margin-right: auto;
-	position: fixed;
+	height: 80%;
+	width: 80%;
+	position: relative;
 	display: none;
+	margin: auto;
+	z-index: 100;
+	padding-top: 50px;
 }
 
 #future-hope-photos {

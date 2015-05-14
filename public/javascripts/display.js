@@ -4,15 +4,29 @@ $(document).ready(function() {
 
 	socket.emit('create', 'room1');
 
-	socket.on('img message', function(msg) {
-		$('#photo1').show();
+	socket.on('child message', function(msg) {
+		$('#photo1').css("display", "block");
+		$('#display').css("opacity", ".3");
+		$('#display-names').css("opacity", ".4");
+		$('#thankyou').css("opacity", ".4");
+	});
+
+	socket.on('tim message', function(msg) {
+		$('#photo2').css("display", "block");
+		$('#display').css("opacity", ".3");
+		$('#display-names').css("opacity", ".4");
+		$('#thankyou').css("opacity", ".4");
+	});
+
+	socket.on('school message', function(msg) {
+		$('#photo3').css("display", "block");
 		$('#display').css("opacity", ".3");
 		$('#display-names').css("opacity", ".4");
 		$('#thankyou').css("opacity", ".4");
 	});
 
 	socket.on('closeimg message', function(msg) {
-		$('#photo1').hide();
+		$('.futurehope').hide();
 		$('#display').css("opacity", "1");
 		$('#display-names').css("opacity", "1");
 		$('#thankyou').css("opacity", "1");
@@ -28,6 +42,7 @@ $(document).ready(function() {
 		var array = string.split(',');
 		var display = document.getElementById('display');
 		display.style.opacity = "0.4";
+
 		array.forEach(function(image) {
 		  function randomFrom(array) {
         return array[Math.floor(Math.random() * array.length)];
@@ -45,6 +60,7 @@ $(document).ready(function() {
 		  	$('#display-messages').append(pic);
 		  };
 	  });
+
 		var loadsofimg = document.getElementsByTagName('img');
 		if (loadsofimg.length > 200) {
 			$('#thankseveryone').show();

@@ -3,8 +3,8 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Future Hope Mela</title>
-		<link rel="stylesheet" href="stylesheets/style.css"/>
 		<link rel="stylesheet" href="stylesheets/foundation.css" />
+		<link rel="stylesheet" href="stylesheets/style.css"/>
 		<link href='http://fonts.googleapis.com/css?family=Roboto:400,300|Love+Ya+Like+A+Sister' rel='stylesheet' type='text/css'>
 		<meta name="description" content="">
 		<meta name="author" content="">
@@ -24,15 +24,24 @@
 				<button id="voltable" type="submit">Choose Your Table</button>
 			</form>
 			<header class="row">
-				<h1 class="small-12 columns">Display Future Hope Photos</h1>
+				<h1 class="small-12 columns" id="photos-h1">Display Future Hope Photos</h1>
 			</header>
 		</center>
-			<form class="row" action="/admin" id="photo"> 
-				<button class="small-2 columns picsbutton tiny" id="gilly">Gilly</button>
-			</form>
-			
+			<div class="row">
+				<form action="/admin" id="photo1"> 
+					<button class="small-4 columns button tiny" id="child">Child</button>
+				</form>
+
+				<form action="/admin" id="photo2"> 
+					<button class="small-4 columns button tiny" id="tim">Tim</button>
+				</form>
+
+				<form action="/admin" id="photo3"> 
+					<button class="small-4 columns button tiny" id="school">School</button>
+				</form>
+			</div>
 			<form class="row" action="/admin" id="closephoto"> 
-			<button class="small-2 columns picsbutton tiny" id="closegilly">close</button>
+				<button class="small-12 columns button" id="close">Close</button>
 			</form>
 		<script src="javascripts/jquery.js"></script>
 		<script src="javascripts/foundation.js"></script>

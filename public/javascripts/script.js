@@ -1,6 +1,7 @@
 $(document).ready(function() {
 
   var selected = {};
+  
   $('#guest-list').click(function(e) {
     var $this = $(this),
     options = this.options,
