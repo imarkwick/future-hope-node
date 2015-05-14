@@ -17,7 +17,7 @@ module.exports.controller = function(app, tables) {
 				}
 			});
 		} else {
-				res.redirect('/volunteer-table');
+			res.redirect('/volunteer-table');
 		};
 	});
 
@@ -37,6 +37,6 @@ module.exports.controller = function(app, tables) {
 				res.location("volunteer");
 				res.redirect("volunteer");
 			}
-		})
+		});
 	});
 };

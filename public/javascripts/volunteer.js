@@ -1,5 +1,7 @@
 $(document).ready(function() {
+
   var socket = io();
+
   $('#mela-auction').submit(function(e) {
   	e.preventDefault();
   	var item = $('#mela-item').val();
@@ -16,8 +18,6 @@ $(document).ready(function() {
 	  	var total = Object.keys(names).length
 	  	socket.emit('chat message', item.repeat(total));
 	  	socket.emit('names message', names);
-	  	console.log(item.repeat(total));
-	  	console.log(names);
 	  	$('#mela-item').val('AUCTION ITEM');
 	  	$('#guest-list').val('');
 	  	$('#success').show();
@@ -30,6 +30,7 @@ $(document).ready(function() {
   	};
   	return false;
   });
+
 	$('#mela-item').click(function() {
 		$('#success').hide();
 	});
