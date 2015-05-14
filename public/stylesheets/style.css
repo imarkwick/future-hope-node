@@ -50,7 +50,7 @@ button{
 
 h1#admin {
 	margin-left: 2rem;
-	margin-top: 15rem;
+	margin-top: 4rem;
 	padding-bottom: 10px;
 }
 
@@ -64,7 +64,8 @@ form#addToTable {
 	width: 70%;
 }
 form#volunteerreturn {
-	margin-top: 100px;
+	margin-top: 2rem;
+	margin-bottom: 2rem;
 	width: 70%;
 }
 
@@ -76,11 +77,6 @@ input#tablenoinput {
 
 input#namesinput{
 	height: 100px;
-}
-
-button#voltable{
-	height: 150px;
-	width: 300px;
 }
 
 button#number {
@@ -121,7 +117,7 @@ img#logostart{
   display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 100px;
+  margin-top: 4rem;
 }
 
 h2#welcome {
@@ -222,8 +218,22 @@ button#addguests{
 button#voltable {
 	border: 1px solid black;
 	background-color: #78D5D7;
-
+	height: initial;
+	width: initial;
 }
+
+div#photos {
+	max-width: 60rem;
+}
+
+div.pics {
+	border: 1px solid black;
+	margin: 1rem;
+	margin-bottom: 2rem;
+	height: 7rem;
+	width: 10rem;
+}
+
 div#success{
 	color: #50ed42;
     display: none;
@@ -231,11 +241,11 @@ div#success{
 }
 
 p#success-notification{
-	font-size: 52px;	
+	font-size: 50px;	
 }
 
 p#error-notification {
-	font-size: 52px;
+	font-size: 50px;
 }
 
 div#thankseveryone{
@@ -306,4 +316,20 @@ div#display-football-messages {
 	body.border {
 		border: 8px solid #D22630;
 	}
- }
+}
+
+img#photo1 {
+	z-index: 50;
+	height: 360px;
+	width: 240px;
+	margin-left: auto;
+	margin-right: auto;
+	position: fixed;
+	display: none;
+}
+
+#future-hope-photos {
+	width: 100%;
+	margin-right: auto;
+	margin-left: auto;
+}

@@ -13,7 +13,6 @@
 		<center>
 			<header class="row">
 				<img id="logostart" src="images/futurelogo.jpg">
-
 				<h1 id="admin" class="small-12 columns">Add Guests To A Table</h1>
 			</header>
 			<form class="row" id="addToTable" name="addGuests" method="post" action="/addguest">
@@ -21,13 +20,25 @@
 				<input class="small-12 columns" id="tablenoinput" type="text" placeholder="Guest Names" name="names">
 				<button type="submit" id="admin-add">Add</button>
 			</form>
-
 			<form class="row" id="volunteerreturn" action="/volunteer-table">
 				<button id="voltable" type="submit">Choose Your Table</button>
 			</form>
+			<header class="row">
+				<h1 class="small-12 columns">Display Future Hope Photos</h1>
+			</header>
 		</center>
+			<form class="row" action="/admin" id="photo"> 
+				<button class="small-2 columns picsbutton tiny" id="gilly">Gilly</button>
+			</form>
+			
+			<form class="row" action="/admin" id="closephoto"> 
+			<button class="small-2 columns picsbutton tiny" id="closegilly">close</button>
+			</form>
 		<script src="javascripts/jquery.js"></script>
 		<script src="javascripts/foundation.js"></script>
+		<script src="javascripts/foundation.reveal.js"></script>
 		<script src="javascripts/script.js"></script>
+		<script src="/socket.io/socket.io.js"></script>
+		<script src="javascripts/admin.js"></script>
 	</body>
 </html>
