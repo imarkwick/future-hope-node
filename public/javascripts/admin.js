@@ -21,4 +21,4 @@ $(document).ready(function() {
 		e.preventDefault();
 		socket.emit('closeimg message', 'Photo 1');
 	});
-});å
+});

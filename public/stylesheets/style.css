@@ -80,6 +80,9 @@ button.tiny {
   width: 20rem;
 }
 
+form.pic {
+}
+
 button#close {
 	background-color: #de5958;
 }
@@ -224,6 +227,7 @@ button#reselect {
 	font-size: 50px;
 	background-color: #4056F4;
 }
+
 button#addguests{
 	width: 50%;
 	border: 1px solid black;
@@ -240,14 +244,6 @@ button#voltable {
 
 div#photos {
 	max-width: 60rem;
-}
-
-div.pics {
-	border: 1px solid black;
-	margin: 1rem;
-	margin-bottom: 2rem;
-	height: 7rem;
-	width: 10rem;
 }
 
 div#success{
@@ -332,6 +328,12 @@ div#display-football-messages {
 	body.border {
 		border: 8px solid #D22630;
 	}
+	button.tiny {
+	font-size: 10px;
+  margin-left: 0.3rem;
+  width: 11.5rem;
+}
+
 }
 
 img.futurehope {
