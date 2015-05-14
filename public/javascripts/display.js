@@ -58,7 +58,7 @@ $(document).ready(function() {
 		  	$('#display-rugby-messages').append(bigPic);		
 			} else if (image === 'cricket.svg') {
 				$('#display-cricket-messages').append(bigPic);
-			} else if (image === 'football.svg') {
+			} else if (image === 'houseparentsoneyear.svg') {
 				$('#display-football-messages').append(bigPic);
 			} else {
 		  	$('#display-messages').append(pic);
