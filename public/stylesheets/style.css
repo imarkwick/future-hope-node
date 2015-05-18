@@ -2,18 +2,6 @@
   font-family: 'Istok Web', sans-serif;
 }
 
-div#display {
-	background-image: url(/images/intro.jpg);
-	height: 92%;
-	width: 100%;
-	z-index: 1; 
-	position: absolute;
-	top: 0px;
-	left: 0px;
-  background-size: cover;
-  display: block;
-}
-
 li {
 	list-style-type: none;
 }
@@ -173,13 +161,6 @@ form#mela-auction {
 	color: #7c2529;
 }
 
-#error {
-	display: none;
-	color: #de5958;
-  text-align: center;
-  font-size: 44px;
-}
-
 h1#volunteerheader {
 	margin-left: auto;
 	margin-right: auto;
@@ -248,8 +229,15 @@ div#photos {
 
 div#success {
 	color: #50ed42;
-    display: none;
-    text-align: center;
+  display: none;
+  text-align: center;
+}
+
+div#error {
+	display: none;
+	color: #de5958;
+  text-align: center;
+  font-size: 44px;
 }
 
 p#success-notification {
@@ -262,10 +250,30 @@ p#error-notification {
 
 /* Display Page */
 
+div#display {
+	background-image: url(/images/intro.jpg);
+	height: 92%;
+	width: 100%;
+	z-index: 1; 
+	position: absolute;
+	top: 8%;
+	left: 0px;
+  background-size: cover;
+  display: block;
+}
+
+div.socket-images {
+	height: 92%;
+	width: 100%;
+	z-index: 20; 
+	position: absolute;
+	top: 8%;
+}
+
 div#thankseveryone {
 	font-family: 'Love Ya Like A Sister', Helvetica;
 	display:none;
-  z-index: 105;
+  z-index: 100;
   position: inherit;
   font-size: 90px;
   padding-top: 25%;
@@ -277,7 +285,7 @@ div#display-names {
   z-index: 10;
   width: 80%;
   height: 8%;
-  bottom: 0;
+  top: 0;
   position: fixed;
   text-align: center;
   float: right;
@@ -292,11 +300,11 @@ h2#thankyou {
   color: white;
   width: 20%;
   height: 8%;
-  bottom: 0;
+  top: 0;
   position: absolute;
   float: left;
   text-align: center;
-  margin-bottom: 0;
+  margin-top: 0;
   font-size: 35px;
   opacity: .9;
 }
@@ -317,13 +325,6 @@ div#display-rugby-messages {
 
 div#display-cricket-messages {
 	float: right;
-	z-index: 20;
-}
-
-div#display-football-messages {
-	float: left;
-	bottom: 8%;
-	position: fixed;
 	z-index: 20;
 }
 

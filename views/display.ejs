@@ -11,6 +11,10 @@
 		<meta name="author" content="">
 	</head>
 	<body>
+		<h2 id="thankyou">Thanks To : </h2>
+		<div id="display-names">
+			<marquee behavior="scroll"  id="disp" direction="left"> </marquee>
+		</div>
 		<div id="display">
 			<% if (items) { %>
 				<% items.forEach(function(image) { %>
@@ -18,22 +22,20 @@
 				<% }); %>
 			<% }; %>
 		</div>
+		
 		<div class="wow tada" id="thankseveryone">
 			We've reached 200 items 
 			Thankyou Everyone!
 		</div>
+
 		<div class="socket-images" id="display-rugby-messages"></div>
 		<div class="socket-images" id="display-cricket-messages"></div>
 		<div class="socket-images" id="display-messages"></div>
-		<div class="socket-images" id="display-football-messages"></div>
+
 		<div id="future-hope-photos">
 			<img class="futurehope" id="photo1" src="/images/indianchild.jpg">
 			<img class="futurehope" id="photo2" src="/images/tim.jpg">
 			<img class="futurehope" id="photo3" src="/images/school.jpg">
-		</div>
-		<h2 id="thankyou">Thanks To : </h2>
-		<div id="display-names">
-			<marquee behavior="scroll"  id="disp" direction="left"> </marquee>
 		</div>
 		<script src="javascripts/jquery.js"></script>
 		<script src="javascripts/foundation.js"></script>

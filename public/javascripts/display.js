@@ -54,22 +54,20 @@ $(document).ready(function() {
 			var effect = randomFrom([' bounceIn', ' zoomIn', ' bounceIn', ' zoomIn']);
 			var pic = '<img id="avatars" class="animated' + effect + '" height="80px" width="80px" src="images/' + image + '"/>';
 			var bigPic = '<img id="avatars" class="animated' + effect + '" height="160px" width="160px" src="images/' + image + '"/>';
-			if (image === 'rugby.svg') {
-		  	$('#display-rugby-messages').append(bigPic);		
-			} else if (image === 'cricket.svg') {
-				$('#display-cricket-messages').append(bigPic);
-			} else if (image === 'houseparentsoneyear.svg') {
-				$('#display-football-messages').append(bigPic);
-			} else {
+			// if (image === 'rugby.svg') {
+		 //  	$('#display-rugby-messages').append(bigPic);		
+			// } else if (image === 'cricket.svg') {
+			// 	$('#display-cricket-messages').append(bigPic);
+			// } else {
 		  	$('#display-messages').append(pic);
-		  };
+		  // };
 	  });
 
-		var loadsofimg = document.getElementsByTagName('img');
-		if (loadsofimg.length > 200) {
-			$('#thankseveryone').show();
-		} else {
-			console.log("notyet");
-		}
+		// var loadsofimg = document.getElementsByTagName('img');
+		// if (loadsofimg.length > 200) {
+		// 	$('#thankseveryone').show();
+		// } else {
+		// 	console.log("notyet");
+		// }
 	});
 });
