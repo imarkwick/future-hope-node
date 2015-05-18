@@ -30,7 +30,7 @@ $(document).ready(function() {
 
 	socket.on('closeimg message', function(msg) {
 		$('.futurehope').hide();
-		$('#display').css("opacity", ".4");
+		$('#display').css("opacity", ".6");
 		$('#display-names').css("opacity", "1");
 		$('#thankyou').css("opacity", "1");
 		$('.socket-images').css("opacity", "1");
@@ -45,7 +45,7 @@ $(document).ready(function() {
 		var string = msg.substring(0, msg.length -1);
 		var array = string.split(',');
 		var display = document.getElementById('display');
-		display.style.opacity = "0.4";
+		display.style.opacity = "0.6";
 
 		array.forEach(function(image) {
 		  function randomFrom(array) {
