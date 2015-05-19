@@ -163,7 +163,22 @@ div#confirmation {
 	display: none;
 	border: 2px solid black;
 	z-index: 50;
-	background-color: black;
-	height: 40px;
-	width: 80px;
+	background-color: #B8B8B8;
+	text-align: center;
+	height: 16rem;
+	width: 62rem;
+	position: absolute;
+	margin-top: 30rem;
+}
+
+ul#selection {
+	font-size: 22px;
+}
+
+button#conf {
+	background-color: #de5958;
+}
+
+button#return {
+	background-color: #78D5D7;
 }
