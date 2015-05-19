@@ -159,7 +159,11 @@ p#error-notification {
 	font-size: 50px;
 }
 
-section#confirmation {
+div#confirmation {
 	display: none;
 	border: 2px solid black;
+	z-index: 50;
+	background-color: black;
+	height: 40px;
+	width: 80px;
 }

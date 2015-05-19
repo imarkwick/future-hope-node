@@ -6,6 +6,14 @@ li {
 	list-style-type: none;
 }
 
+img#logostart {
+  height: 200px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 4rem;
+}
+
 select#mela-item {
 	margin-top: 10px;
 	width: 100%;
