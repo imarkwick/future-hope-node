@@ -2,6 +2,13 @@ $(document).ready(function() {
 
   var socket = io();
 
+  $('#mela-auction').submit(function() {
+  	var item = $('#mela-item').val();
+  	var names = $('#guest-list').val();
+  	var total = Object.keys(names).length;
+  	$('#confirmation').show();
+  });
+
   $('#mela-auction').submit(function(e) {
   	e.preventDefault();
   	var item = $('#mela-item').val();

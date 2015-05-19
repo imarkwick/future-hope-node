@@ -1,0 +1,165 @@
+/* Choose Table Page */
+
+input#tablenoinput {
+	height: 100px;
+	font-size: 50px;
+	text-align: center;
+}
+
+/* Volunteer Page */
+
+input#namesinput {
+	height: 100px;
+}
+
+button#number {
+	width: 12rem;
+	height: 4rem;
+	font-size: 2rem;
+}
+
+button:hover {
+	background-color: #d22630;
+	opacity: .9	;
+}
+
+button.vol {
+	height: 5rem;
+	margin-top: 1rem;
+	font-size: 36px;
+}
+
+option{
+	margin-bottom: 2rem;
+	font-size: 40px;
+	min-height: 100px;
+	max-width: 700px;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	text-align: center;
+}
+
+img#avatars {
+	z-index: 2;
+	position: relative;
+}
+
+h2#welcome {
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	font-family: 'Love Ya Like A Sister', Helvetica;
+	font-size: 34px;
+	margin-top: 10rem;
+	margin-bottom: 50px;
+}
+
+select#selecttable {
+	width: 14rem;
+	height: 4rem;
+	margin-bottom: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  float: none;
+  display: block;
+}
+
+h1#volunteerheader {
+	margin-left: auto;
+	margin-right: auto;
+	display: table;
+	margin-bottom: 50px;
+	font-size: 90px;
+	font-family: 'Love Ya Like A Sister', Helvetica;
+}
+
+form#mela-auction {
+	color: #7c2529;
+}
+
+h1#volunteerheader {
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+img#logomain {
+	height: 50px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+}
+
+h3 {
+	text-align: center;
+}
+
+h3#names {
+	margin-top: 100px;
+	font-size: 60px;
+	font-family: 'Love Ya Like A Sister', Helvetica;
+}
+
+h3#items {
+	font-size: 60px;
+	font-family: 'Love Ya Like A Sister', Helvetica;
+}
+
+
+button#mela-add {
+	margin-top: 50px;
+	height: 150px;
+	border: 3px solid black;
+	font-size: 60px;
+
+}
+
+section#navigationbuttons {
+	margin-top: 50px;
+}
+
+button#reselect {
+	width: 50%;
+	border:1px solid black; 
+	font-size: 50px;
+	background-color: #4056F4;
+}
+
+button#addguests {
+	width: 50%;
+	border: 1px solid black;
+	font-size: 45px;
+	background-color: #78D5D7;
+}
+
+div#photos {
+	max-width: 60rem;
+}
+
+div#success {
+	color: #50ed42;
+  display: none;
+  text-align: center;
+}
+
+div#error {
+	display: none;
+	color: #de5958;
+  text-align: center;
+  font-size: 44px;
+}
+
+p#success-notification {
+	font-size: 50px;	
+}
+
+p#error-notification {
+	font-size: 50px;
+}
+
+section#confirmation {
+	display: none;
+	border: 2px solid black;
+}
