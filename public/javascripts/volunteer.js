@@ -12,8 +12,8 @@ $(document).ready(function() {
   	while (list.firstChild) {
   		list.removeChild(list.firstChild);
   	}
-  	$('#selection').append('<li>Item: ' + auctionItem + '</li>');
-  	$('#selection').append('<li>Total guests giving: ' + total + '</li>');
+  	$('#selection').append('<li>Item:  <b>' + auctionItem + '</b></li>');
+  	$('#selection').append('<li>Total:  ' + total + '</li>');
   	$('#vol-body').css('opacity', '.4');
   	$('#confirmation').show();
   	$("html, body").animate({ scrollTop: 0 }, 200);
