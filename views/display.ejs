@@ -16,22 +16,25 @@
 		<div id="display-names">
 			<marquee behavior="scroll"  id="disp" direction="left"> </marquee>
 		</div>
-		<div id="display">
+
+		<div id="display"></div>
+
+		<div id="mela">
 			<% if (items) { %>
 				<% items.forEach(function(image) { %>
 					<img class="wow bounceIn" height="80px" width="80px" src="images/<%= image %>" />
 				<% }); %>
 			<% }; %>
+			<div class="socket-images" id="display-messages"></div>
+			<div id="display-rugby-messages"></div>
 		</div>
-		
+
 		<div class="wow tada" id="thankseveryone">
 			We've reached 200 items 
 			Thankyou Everyone!
 		</div>
 
-		<div class="socket-images" id="display-rugby-messages"></div>
-		<div class="socket-images" id="display-cricket-messages"></div>
-		<div class="socket-images" id="display-messages"></div>
+
 
 		<div id="future-hope-photos">
 			<img class="futurehope" id="photo1" src="/images/cricketoneyear.png">

@@ -4,7 +4,7 @@ $(document).ready(function() {
 
 	socket.emit('create', 'room1');
 
-	socket.on('child message', function(msg) {
+	socket.on('rugby message', function(msg) {
 		$('#photo1').css("display", "block");
 		$('#display').css("opacity", ".3");
 		$('#display-names').css("opacity", ".4");
@@ -12,7 +12,7 @@ $(document).ready(function() {
 		$('.socket-images').css("opacity", ".4");
 	});
 
-	socket.on('tim message', function(msg) {
+	socket.on('cricket message', function(msg) {
 		$('#photo2').css("display", "block");
 		$('#display').css("opacity", ".3");
 		$('#display-names').css("opacity", ".4");
@@ -20,7 +20,7 @@ $(document).ready(function() {
 		$('.socket-images').css("opacity", ".4");
 	});
 
-	socket.on('school message', function(msg) {
+	socket.on('houseparents message', function(msg) {
 		$('#photo3').css("display", "block");
 		$('#display').css("opacity", ".3");
 		$('#display-names').css("opacity", ".4");
@@ -54,13 +54,13 @@ $(document).ready(function() {
 			var effect = randomFrom([' bounceIn', ' zoomIn', ' bounceIn', ' zoomIn']);
 			var pic = '<img id="avatars" class="animated' + effect + '" height="80px" width="80px" src="images/' + image + '"/>';
 			var bigPic = '<img id="avatars" class="animated' + effect + '" height="160px" width="160px" src="images/' + image + '"/>';
-			// if (image === 'rugby.svg') {
-		 //  	$('#display-rugby-messages').append(bigPic);		
+			if (image === 'Rugby.svg') {
+		  	$('#display-rugby-messages').append(bigPic);
 			// } else if (image === 'cricket.svg') {
 			// 	$('#display-cricket-messages').append(bigPic);
-			// } else {
+			} else {
 		  	$('#display-messages').append(pic);
-		  // };
+		  };
 	  });
 
 		// var loadsofimg = document.getElementsByTagName('img');

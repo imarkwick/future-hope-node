@@ -5,19 +5,11 @@ div#display {
 	height: 92%;
 	width: 100%;
 	z-index: 1; 
-	position: absolute;
+	position: fixed;
 	top: 8%;
 	left: 0px;
   background-size: cover;
   display: block;
-}
-
-div.socket-images {
-	height: 92%;
-	width: 100%;
-	z-index: 20; 
-	position: absolute;
-	top: 8%;
 }
 
 div#thankseveryone {
@@ -68,14 +60,27 @@ li#names-list {
   color: white;
 }
 
-div#display-rugby-messages {
-	float: left;
-	z-index: 20;
+#mela {
+	height: 92%;
+	width: 100%;
+	position: fixed;
+	top: 8%;
+	z-index: 10;
+	display: block;
 }
 
-div#display-cricket-messages {
-	float: right;
-	z-index: 20;
+#display-rugby-messages {
+	float: left;
+	z-index: 100;
+	top: 8%;
+}
+
+div.socket-images {
+	height: 92%;
+	width: 100%;
+	z-index: 100; 
+	position: fixed;
+	top: 8%;
 }
 
 img.futurehope {
