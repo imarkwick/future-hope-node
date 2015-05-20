@@ -76,6 +76,10 @@ $(document).ready(function() {
 		$('.socket-images').css("opacity", "1");
 	});
 
+	socket.on('db message', function(msg) {
+		$('#database-images').show();
+	})
+
 	socket.on('names message', function(msg) {
 		var names = msg;
 		$('#disp').append('<li id="names-list">' + msg + ',' + ("&nbsp;") + '</li>');

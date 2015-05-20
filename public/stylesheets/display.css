@@ -74,6 +74,10 @@ div#all-mela{
 	display: flex;
 }
 
+div#database-images {
+	display: none;
+}
+
 img.futurehope {
 	z-index: 50;
 	height: 50%;
