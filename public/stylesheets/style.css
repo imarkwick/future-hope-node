@@ -1,0 +1,54 @@
+* {
+  font-family: 'Istok Web', sans-serif;
+}
+
+li {
+	list-style-type: none;
+}
+
+img#logostart {
+  height: 200px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 4rem;
+}
+
+select#mela-item {
+	margin-top: 10px;
+	width: 100%;
+	text-align: center;
+ 	font-size: 40px;
+  height: 6rem;
+}
+
+select#guest-list {
+	font-size: 60px;
+	width: 100%;
+}
+
+a {
+  color: #00B7FF;
+}
+
+button {
+	width: 12rem;
+	height: 4rem;
+	background-color: #de5958;
+	font-size: 34px;
+	padding: 10px;
+	margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+@media screen and (max-width: 1000px) { 
+	body.border {
+		border: 8px solid #D22630;
+	}
+	button.tiny {
+		font-size: 10px;
+	  margin-left: 0.3rem;
+	  width: 11.5rem;
+	}
+}

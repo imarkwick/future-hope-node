@@ -1,0 +1,44 @@
+/* Admin Page */
+
+h1#admin {
+	margin-left: 2rem;
+	margin-top: 4rem;
+	padding-bottom: 10px;
+}
+
+button#admin-add {
+	width: 12rem;
+	height: 4rem;
+	font-size: 2rem;
+}
+
+button#voltable {
+	background-color: #78D5D7;
+	height: initial;
+	width: initial;
+}
+
+form#addToTable {
+	width: 70%;
+}
+
+form#volunteerreturn {
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+	width: 70%;
+}
+
+h1#photos-h1 {
+	margin-bottom: 2rem;
+}
+
+button.tiny {
+	font-size: 20px;
+  margin-left: 0.5rem;
+  width: 20rem;
+}
+
+button#close {
+	background-color: #de5958;
+	font-size: 24px;
+}
