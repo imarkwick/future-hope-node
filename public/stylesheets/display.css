@@ -78,6 +78,7 @@ div#display-cricket-messages {
 
 div#all-mela{
 	display: block;
+	position: relative;
 }
 
 div#database-images {
@@ -91,7 +92,6 @@ img.futurehope {
 	position: relative;
 	display: none;
 	margin: auto;
-	z-index: 100;
 }
 
 #future-hope-photos {
@@ -99,4 +99,6 @@ img.futurehope {
 	margin-right: auto;
 	margin-left: auto;
 	padding-top: 10px;
+	top: 0;
+	position: absolute;
 }

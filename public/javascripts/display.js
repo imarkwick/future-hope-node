@@ -10,6 +10,8 @@ $(document).ready(function() {
 		$('#display-names').css("opacity", ".4");
 		$('#thankyou').css("opacity", ".4");
 		$('.socket-images').css("opacity", ".4");
+		$('#database-images').css("opacity", ".4");
+
 	});
 
 	socket.on('teacher1year message', function(msg) {
@@ -18,6 +20,7 @@ $(document).ready(function() {
 		$('#display-names').css("opacity", ".4");
 		$('#thankyou').css("opacity", ".4");
 		$('.socket-images').css("opacity", ".4");
+		$('#database-images').css("opacity", ".4");
 	});
 
 	socket.on('education6months message', function(msg) {
@@ -26,6 +29,7 @@ $(document).ready(function() {
 		$('#display-names').css("opacity", ".4");
 		$('#thankyou').css("opacity", ".4");
 		$('.socket-images').css("opacity", ".4");
+		$('#database-images').css("opacity", ".4");
 	});
 
 		socket.on('activities message', function(msg) {
@@ -34,6 +38,7 @@ $(document).ready(function() {
 		$('#display-names').css("opacity", ".4");
 		$('#thankyou').css("opacity", ".4");
 		$('.socket-images').css("opacity", ".4");
+		$('#database-images').css("opacity", ".4");
 	});
 
 	socket.on('rugby message', function(msg) {
@@ -42,6 +47,7 @@ $(document).ready(function() {
 		$('#display-names').css("opacity", ".4");
 		$('#thankyou').css("opacity", ".4");
 		$('.socket-images').css("opacity", ".4");
+		$('#database-images').css("opacity", ".4");
 	});
 
 	socket.on('homeandeducation6month message', function(msg) {
@@ -50,6 +56,7 @@ $(document).ready(function() {
 		$('#display-names').css("opacity", ".4");
 		$('#thankyou').css("opacity", ".4");
 		$('.socket-images').css("opacity", ".4");
+		$('#database-images').css("opacity", ".4");
 	});
 
 		socket.on('houseparent message', function(msg) {
@@ -58,6 +65,7 @@ $(document).ready(function() {
 		$('#display-names').css("opacity", ".4");
 		$('#thankyou').css("opacity", ".4");
 		$('.socket-images').css("opacity", ".4");
+		$('#database-images').css("opacity", ".4");
 	});
 
 	socket.on('degree message', function(msg) {
@@ -66,6 +74,7 @@ $(document).ready(function() {
 		$('#display-names').css("opacity", ".4");
 		$('#thankyou').css("opacity", ".4");
 		$('.socket-images').css("opacity", ".4");
+		$('#database-images').css("opacity", ".4");
 	});
 
 	socket.on('closeimg message', function(msg) {
@@ -74,10 +83,12 @@ $(document).ready(function() {
 		$('#display-names').css("opacity", "1");
 		$('#thankyou').css("opacity", "1");
 		$('.socket-images').css("opacity", "1");
+		$('#database-images').css("opacity", "1");
 	});
 
 	socket.on('db message', function(msg) {
 		$('#database-images').show();
+		$('#wholepage').css("opacity", ".6");
 	})
 
 	socket.on('names message', function(msg) {
@@ -96,8 +107,8 @@ $(document).ready(function() {
         return array[Math.floor(Math.random() * array.length)];
       }
 			var effect = randomFrom([' bounceIn', ' zoomIn', ' bounceIn', ' zoomIn']);
-			var pic = '<img id="avatars" class="animated' + effect + '" opacity="1" height="150px" width="150px" src="images/' + image + '"/>';
-			var bigPic = '<img id="avatars" class="animated' + effect + '" height="300px" width="300px" src="images/' + image + '"/>';
+			var pic = '<img id="avatars" class="animated' + effect + '" opacity="1" height="120px" width="120px" src="images/' + image + '"/>';
+			var bigPic = '<img id="avatars" class="animated' + effect + '" height="240px" width="240px" src="images/' + image + '"/>';
 			if (image === 'rugby.svg') {
 		  	$('#display-rugby-messages').append(bigPic);
 			} else if (image === 'cricket.svg') {
