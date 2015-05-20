@@ -21,26 +21,30 @@
 		</div>
 		<section id="top-space"></section>
 		<div id="all-mela">
-		<div id="database-images">
-			<% if (items) { %>
-				<% items.forEach(function(image) { %>
-					<img class="wow bounceIn" height="80px" width="80px" src="images/<%= image %>" />
-				<% }); %>
-			<% }; %>
+			<div id="database-images">
+				<% if (items) { %>
+					<% items.forEach(function(image) { %>
+						<img class="wow bounceIn" height="80px" width="80px" src="images/<%= image %>" />
+					<% }); %>
+				<% }; %>
+			</div>
+			<section id="socketimgs">
+				<div id="display-rugby-messages"></div>
+				<div id="display-cricket-messages"></div>
+				<div class="socket-images" id="display-messages"></div>
+			</section>
 		</div>
-		<div id="display-rugby-messages"></div>
-		<div class="socket-images" id="display-messages"></div>
-		</div>
+
 		<div id="future-hope-photos">
 
-			<img class="futurehope" id="photo1" src="/images/cricketoneyear.png" style="margin-top: 30px;">
+			<img class="futurehope" id="photo1" src="/images/cricketoneyear.png">
 			<img class="futurehope" id="photo2" src="/images/teacheroneyear.png">
-			<img class="futurehope" id="photo3" src="/images/education6months.png" style="margin-top: 30px;">
+			<img class="futurehope" id="photo3" src="/images/education6months.png">
 			<img class="futurehope" id="photo4" src="/images/activitiesbig.png">
 			<img class="futurehope" id="photo5" src="/images/rugbylarge.png">
 			<img class="futurehope" id="photo6" src="/images/homeandeducation.png">
-			<img class="futurehope" id="photo7" src="/images/houseparents.png" style="margin-top: 31px;">
-			<img class="futurehope" id="photo8" src="/images/degree.png" style="margin-top: 30px;">
+			<img class="futurehope" id="photo7" src="/images/houseparents.png">
+			<img class="futurehope" id="photo8" src="/images/degree.png">
 		</div>
 		<script src="javascripts/jquery.js"></script>
 		<script src="javascripts/foundation.js"></script>

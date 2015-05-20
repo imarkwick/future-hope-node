@@ -66,12 +66,18 @@ div#display-rugby-messages {
 	top: 8%;
 }
 
+div#display-cricket-messages {
+	float: right;
+	z-index: 20;
+	top: 8%;
+}
+
 #top-space {
 	height: 8%;
 }
 
 div#all-mela{
-	display: flex;
+	display: block;
 }
 
 div#database-images {
