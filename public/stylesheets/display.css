@@ -70,6 +70,10 @@ div#display-rugby-messages {
 	height: 8%;
 }
 
+div#all-mela{
+	display: flex;
+}
+
 img.futurehope {
 	z-index: 50;
 	height: 50%;
