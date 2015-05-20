@@ -1,105 +1,103 @@
-/* Display Page */
-
 div#wholepage {
-	background-image: url(/images/intro.jpg);
-	height: 92%;
-	width: 100%;
-	z-index: -15; 
-	position: fixed;
-	bottom: 0;
-	left: 0px;
-  background-size: cover;
-  display: block;
+    background-image: url(/images/intro.jpg);
+    height: 92%;
+    width: 100%;
+    z-index: -15; 
+    position: fixed;
+    bottom: 0;
+    left: 0px;
+ background-size: cover;
+ display: block;
 }
 
 div#thankseveryone {
-	font-family: 'Love Ya Like A Sister', Helvetica;
-	display:none;
-  z-index: 100;
-  position: inherit;
-  font-size: 90px;
-  padding-top: 25%;
-  text-align: center;
-  position: fixed;
+    font-family: 'Love Ya Like A Sister', Helvetica;
+    display:none;
+ z-index: 100;
+ position: inherit;
+ font-size: 90px;
+ padding-top: 25%;
+ text-align: center;
+ position: fixed;
 }
 
 div#display-names {
-  background-color: #f52d2d;
-  z-index: 10;
-  width: 80%;
-  height: 8%;
-  top: 0;
-  position: fixed;
-  text-align: center;
-  float: right;
-  margin-left: 20%;
-  opacity: .9;
+ background-color: #f52d2d ;
+ z-index: 10;
+ width: 80%;
+ height: 8%;
+ top: 0;
+ position: fixed;
+ text-align: center;
+ float: right;
+ margin-left: 20%;
+ opacity: .9;
 }
 
 h2#thankyou {
-  font-family: 'Love Ya Like A Sister', Helvetica;
-  background-color: #f52d2d;
-  z-index: 10;
-  color: white;
-  width: 20%;
-  height: 8%;
-  top: 0;
-  position: absolute;
-  float: left;
-  text-align: center;
-  margin-top: 0;
-  font-size: 52px;
-  opacity: .9;
+ font-family: 'Love Ya Like A Sister', Helvetica;
+ background-color: #f52d2d ;
+ z-index: 10;
+ color: white;
+ width: 20%;
+ height: 8%;
+ top: 0;
+ position: absolute;
+ float: left;
+ text-align: center;
+ margin-top: 0;
+ font-size: 52px;
+ opacity: .9;
 }
 
 li#names-list {
-	font-family: 'Love Ya Like A Sister', Helvetica;
-	display: inline-block;
-	font-size: 48px;
-	z-index: 20;
-	line-height: inherit;
-  color: white;
+    font-family: 'Love Ya Like A Sister', Helvetica;
+    display: inline-block;
+    font-size: 48px;
+    z-index: 20;
+    line-height: inherit;
+ color: white;
 }
 
 div#display-rugby-messages {
-	float: left;
-	z-index: 20;
-	top: 8%;
+    float: left;
+    z-index: 20;
+    top: 8%;
 }
 
 div#display-cricket-messages {
-	float: right;
-	z-index: 20;
-	top: 8%;
+    float: right;
+    z-index: 20;
+    top: 8%;
 }
 
 #top-space {
-	height: 8%;
+    height: 8%;
 }
 
 div#all-mela{
-	display: block;
-	position: relative;
+    display: block;
+    position: relative;
 }
 
 div#database-images {
-	display: none;
+    display: none;
 }
 
 img.futurehope {
-	z-index: 50;
-	height: 50%;
-	width: 50%;
-	position: relative;
-	display: none;
-	margin: auto;
+    z-index: 50;
+    height: 50%;
+    width: 50%;
+    position: relative;
+    display: none;
+    margin: auto;
 }
 
 #future-hope-photos {
-	width: 100%;
-	margin-right: auto;
-	margin-left: auto;
-	padding-top: 10px;
-	top: 0;
-	position: absolute;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 10px;
+    top: 0;
+    position: absolute;
 }
