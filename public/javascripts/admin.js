@@ -45,4 +45,10 @@ $(document).ready(function() {
 		e.preventDefault();
 		socket.emit('closeimg message', 'Photo 1');
 	});
+
+	$('#db').submit(function(e) {
+		e.preventDefault();
+		socket.emit('db message', 'Photos');
+	});
+
 });

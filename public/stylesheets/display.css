@@ -1,12 +1,11 @@
 /* Display Page */
 
-div#display {
+div#wholepage {
 	background-image: url(/images/intro.jpg);
 	height: 92%;
 	width: 100%;
-	z-index: 1; 
+	z-index: -15; 
 	position: fixed;
-	/*top: 8%;*/
 	bottom: 0;
 	left: 0px;
   background-size: cover;
@@ -61,28 +60,29 @@ li#names-list {
   color: white;
 }
 
-div#mela {
-	height: 92%;
-	width: 100%;
-	position: fixed;
-	top: 8%;
-	z-index: 10;
-	display: block;
-}
-
 div#display-rugby-messages {
 	float: left;
-	z-index: 5;
+	z-index: 20;
 	top: 8%;
-	position: fixed;
 }
 
-div.socket-images {
-	height: 92%;
-	width: 100%;
-	z-index: 100; 
-	position: fixed;
-	/*top: 8%;*/
+div#display-cricket-messages {
+	float: right;
+	z-index: 20;
+	top: 8%;
+}
+
+#top-space {
+	height: 8%;
+}
+
+div#all-mela{
+	display: block;
+	position: relative;
+}
+
+div#database-images {
+	display: none;
 }
 
 img.futurehope {
@@ -92,7 +92,6 @@ img.futurehope {
 	position: relative;
 	display: none;
 	margin: auto;
-	z-index: 100;
 }
 
 #future-hope-photos {
@@ -100,4 +99,6 @@ img.futurehope {
 	margin-right: auto;
 	margin-left: auto;
 	padding-top: 10px;
+	top: 0;
+	position: absolute;
 }
