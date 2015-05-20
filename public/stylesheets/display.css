@@ -6,7 +6,8 @@ div#display {
 	width: 100%;
 	z-index: 1; 
 	position: fixed;
-	top: 8%;
+	/*top: 8%;*/
+	bottom: 0;
 	left: 0px;
   background-size: cover;
   display: block;
@@ -60,7 +61,7 @@ li#names-list {
   color: white;
 }
 
-#mela {
+div#mela {
 	height: 92%;
 	width: 100%;
 	position: fixed;
@@ -69,10 +70,11 @@ li#names-list {
 	display: block;
 }
 
-#display-rugby-messages {
+div#display-rugby-messages {
 	float: left;
-	z-index: 100;
+	z-index: 5;
 	top: 8%;
+	position: fixed;
 }
 
 div.socket-images {
@@ -80,7 +82,7 @@ div.socket-images {
 	width: 100%;
 	z-index: 100; 
 	position: fixed;
-	top: 8%;
+	/*top: 8%;*/
 }
 
 img.futurehope {

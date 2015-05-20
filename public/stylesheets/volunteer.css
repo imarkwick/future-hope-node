@@ -165,14 +165,17 @@ div#confirmation {
 	z-index: 50;
 	background-color: #B8B8B8;
 	text-align: center;
-	height: 16rem;
+	height: 50rem;
 	width: 62rem;
 	position: absolute;
-	margin-top: 30rem;
+	margin-top: 7rem;
+	padding-top: 12rem;
+
 }
 
 ul#selection {
 	font-size: 22px;
+	padding-bottom: 2rem;
 }
 
 button#conf {
