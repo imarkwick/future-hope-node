@@ -96,8 +96,8 @@ $(document).ready(function() {
         return array[Math.floor(Math.random() * array.length)];
       }
 			var effect = randomFrom([' bounceIn', ' zoomIn', ' bounceIn', ' zoomIn']);
-			var pic = '<img id="avatars" class="animated' + effect + '" opacity="1" height="80px" width="80px" src="images/' + image + '"/>';
-			var bigPic = '<img id="avatars" class="animated' + effect + '" height="160px" width="160px" src="images/' + image + '"/>';
+			var pic = '<img id="avatars" class="animated' + effect + '" opacity="1" height="150px" width="150px" src="images/' + image + '"/>';
+			var bigPic = '<img id="avatars" class="animated' + effect + '" height="300px" width="300px" src="images/' + image + '"/>';
 			if (image === 'rugby.svg') {
 		  	$('#display-rugby-messages').append(bigPic);
 			} else if (image === 'cricket.svg') {
