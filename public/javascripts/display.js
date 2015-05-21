@@ -6,7 +6,7 @@ $(document).ready(function() {
 
 	socket.on('cricket message', function(msg) {
 		$('#photo1').css("display", "block");
-		$('#wholepage').css("opacity", ".3");
+		$('#wholepage').css("opacity", ".1");
 		$('#display-names').css("opacity", ".4");
 		$('#thankyou').css("opacity", ".4");
 		$('.socket-images').css("opacity", ".4");
@@ -16,7 +16,7 @@ $(document).ready(function() {
 
 	socket.on('teacher1year message', function(msg) {
 		$('#photo2').css("display", "block");
-		$('#wholepage').css("opacity", ".3");
+		$('#wholepage').css("opacity", ".1");
 		$('#display-names').css("opacity", ".4");
 		$('#thankyou').css("opacity", ".4");
 		$('.socket-images').css("opacity", ".4");
@@ -25,7 +25,7 @@ $(document).ready(function() {
 
 	socket.on('education6months message', function(msg) {
 		$('#photo3').css("display", "block");
-		$('#wholepage').css("opacity", ".3");
+		$('#wholepage').css("opacity", ".1");
 		$('#display-names').css("opacity", ".4");
 		$('#thankyou').css("opacity", ".4");
 		$('.socket-images').css("opacity", ".4");
@@ -34,7 +34,7 @@ $(document).ready(function() {
 
 		socket.on('activities message', function(msg) {
 		$('#photo4').css("display", "block");
-		$('#wholepage').css("opacity", ".3");
+		$('#wholepage').css("opacity", ".1");
 		$('#display-names').css("opacity", ".4");
 		$('#thankyou').css("opacity", ".4");
 		$('.socket-images').css("opacity", ".4");
@@ -43,7 +43,7 @@ $(document).ready(function() {
 
 	socket.on('rugby message', function(msg) {
 		$('#photo5').css("display", "block");
-		$('#wholepage').css("opacity", ".3");
+		$('#wholepage').css("opacity", ".1");
 		$('#display-names').css("opacity", ".4");
 		$('#thankyou').css("opacity", ".4");
 		$('.socket-images').css("opacity", ".4");
@@ -52,7 +52,7 @@ $(document).ready(function() {
 
 	socket.on('homeandeducation6month message', function(msg) {
 		$('#photo6').css("display", "block");
-		$('#wholepage').css("opacity", ".3");
+		$('#wholepage').css("opacity", ".1");
 		$('#display-names').css("opacity", ".4");
 		$('#thankyou').css("opacity", ".4");
 		$('.socket-images').css("opacity", ".4");
@@ -61,7 +61,7 @@ $(document).ready(function() {
 
 		socket.on('houseparent message', function(msg) {
 		$('#photo7').css("display", "block");
-		$('#wholepage').css("opacity", ".3");
+		$('#wholepage').css("opacity", ".1");
 		$('#display-names').css("opacity", ".4");
 		$('#thankyou').css("opacity", ".4");
 		$('.socket-images').css("opacity", ".4");
@@ -70,7 +70,7 @@ $(document).ready(function() {
 
 	socket.on('degree message', function(msg) {
 		$('#photo8').css("display", "block");
-		$('#wholepage').css("opacity", ".3");
+		$('#wholepage').css("opacity", ".1");
 		$('#display-names').css("opacity", ".4");
 		$('#thankyou').css("opacity", ".4");
 		$('.socket-images').css("opacity", ".4");
