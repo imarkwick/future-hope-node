@@ -2,6 +2,18 @@ $(document).ready(function() {
 	new WOW().init();
 	var socket = io();
 
+	var go = function() {
+	var totalImages = document.images.length;
+	 var smallSocket = document.getElementsByClassName('mini');
+	 var bigSocket = document.getElementsByClassName('big');
+		if (totalImages >= 122){
+			$(smallSocket).css("height", "90px");
+			$(smallSocket).css("width", "90px");
+			$(bigSocket).css("height", "180px");
+			$(bigSocket).css("width", "180px");
+		};
+	};
+
 	socket.emit('create', 'room1');
 
 	socket.on('cricket message', function(msg) {
@@ -105,8 +117,8 @@ $(document).ready(function() {
         return array[Math.floor(Math.random() * array.length)];
       }
 			var effect = randomFrom([' bounceIn', ' zoomIn', ' bounceIn', ' zoomIn']);
-			var pic = '<img id="avatars-small" class="animated' + effect + '" opacity="1" src="images/' + image + '"/>';
-			var bigPic = '<img id="avatars-big" class="animated' + effect + '" height="240px" width="240px" src="images/' + image + '"/>';
+			var pic = '<img id="avatars-small" class="animated' + effect + ' mini" opacity="1" src="images/' + image + '"/>';
+			var bigPic = '<img id="avatars-big" class="animated' + effect + ' big" height="240px" width="240px" src="images/' + image + '"/>';
 			if (image === 'rugby.svg') {
 		  	$('#display-rugby-messages').append(bigPic);
 			} else if (image === 'cricket.svg') {
@@ -114,6 +126,7 @@ $(document).ready(function() {
 			} else {
 		  	$('#display-messages').append(pic);
 		  };
+		go();
 	  });
 	});
  	
