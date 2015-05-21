@@ -118,7 +118,7 @@ $(document).ready(function() {
       }
 			var effect = randomFrom([' bounceIn', ' zoomIn', ' bounceIn', ' zoomIn']);
 			var pic = '<img id="avatars-small" class="animated' + effect + ' mini" opacity="1" src="images/' + image + '"/>';
-			var bigPic = '<img id="avatars-big" class="animated' + effect + ' big" height="240px" width="240px" src="images/' + image + '"/>';
+			var bigPic = '<img id="avatars-big" class="animated' + effect + ' big" height="200px" width="200px" src="images/' + image + '"/>';
 			if (image === 'rugby.svg') {
 		  	$('#display-rugby-messages').append(bigPic);
 			} else if (image === 'cricket.svg') {
