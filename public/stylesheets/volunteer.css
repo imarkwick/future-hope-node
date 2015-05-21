@@ -182,7 +182,7 @@ ul#selection {
 
 button#conf {
   background-color: #31D843;
-  font-size: 32px;
+  font-size: 60px;
   border: 2px solid black;
   height: 12rem;
   width: 17rem;
@@ -190,7 +190,7 @@ button#conf {
 
 button#return {
 	background-color: #EA0000;
-  font-size: 32px;
+  font-size: 60px;
   border: 2px solid black;
   height: 12rem;
   width: 17rem;
