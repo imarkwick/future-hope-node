@@ -6,11 +6,11 @@ $(document).ready(function() {
 	var totalImages = document.images.length;
 	 var smallSocket = document.getElementsByClassName('mini');
 	 var bigSocket = document.getElementsByClassName('big');
-		if (totalImages >= 122){
+		if (totalImages >= 80){
 			$(smallSocket).css("height", "90px");
 			$(smallSocket).css("width", "90px");
-			$(bigSocket).css("height", "180px");
-			$(bigSocket).css("width", "180px");
+			$(bigSocket).css("height", "178px");
+			$(bigSocket).css("width", "178px");
 		};
 	};
 
