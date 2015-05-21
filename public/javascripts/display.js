@@ -79,7 +79,7 @@ $(document).ready(function() {
 
 	socket.on('closeimg message', function(msg) {
 		$('.futurehope').hide();
-		$('#wholepage').css("opacity", ".6");
+		$('#wholepage').css("opacity", ".5");
 		$('#display-names').css("opacity", "1");
 		$('#thankyou').css("opacity", "1");
 		$('.socket-images').css("opacity", "1");
@@ -88,7 +88,7 @@ $(document).ready(function() {
 
 	socket.on('db message', function(msg) {
 		$('#database-images').show();
-		$('#wholepage').css("opacity", ".6");
+		$('#wholepage').css("opacity", ".5");
 	})
 
 	socket.on('names message', function(msg) {
@@ -100,7 +100,7 @@ $(document).ready(function() {
 		var string = msg.substring(0, msg.length -1);
 		var array = string.split(',');
 		var display = document.getElementById('wholepage');
-		display.style.opacity = "0.6";
+		display.style.opacity = "0.5";
 
 		array.forEach(function(image) {
 		  function randomFrom(array) {
