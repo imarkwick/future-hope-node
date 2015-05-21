@@ -11,7 +11,6 @@ $(document).ready(function() {
 		$('#thankyou').css("opacity", ".4");
 		$('.socket-images').css("opacity", ".4");
 		$('#database-images').css("opacity", ".4");
-
 	});
 
 	socket.on('teacher1year message', function(msg) {

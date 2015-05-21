@@ -50,5 +50,4 @@ $(document).ready(function() {
 		e.preventDefault();
 		socket.emit('db message', 'Photos');
 	});
-
 });
