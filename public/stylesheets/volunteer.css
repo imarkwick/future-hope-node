@@ -29,7 +29,7 @@ button.vol {
 	font-size: 36px;
 }
 
-option{
+option {
 	margin-bottom: 2rem;
 	font-size: 40px;
 	min-height: 100px;
@@ -107,7 +107,6 @@ h3#items {
 	font-family: 'Love Ya Like A Sister', Helvetica;
 }
 
-
 button#mela-add {
 	margin-top: 50px;
 	height: 150px;
@@ -170,7 +169,6 @@ div#confirmation {
 	position: absolute;
 	margin-top: 2rem;
 	padding-top: 2rem;
-
 }
 
 h2#confirm {
@@ -183,17 +181,17 @@ ul#selection {
 }
 
 button#conf {
-    background-color: #31D843;
-    font-size: 32px;
-    border: 2px solid black;
-    height: 12rem;
-    width: 17rem;
+  background-color: #31D843;
+  font-size: 60px;
+  border: 2px solid black;
+  height: 12rem;
+  width: 17rem;
 }
 
 button#return {
 	background-color: #EA0000;
-    font-size: 32px;
-    border: 2px solid black;
-    height: 12rem;
-    width: 17rem;
+  font-size: 60px;
+  border: 2px solid black;
+  height: 12rem;
+  width: 17rem;
 }
