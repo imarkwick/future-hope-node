@@ -3,10 +3,10 @@ module.exports.controller = function(app) {
 	/* GET admin page */
 	app.get('/admin', function(req, res) {
 		var db = req.db;
-		var collection = db.get('tablecollection');
+		var collection = db.get('itemcollection');
 		collection.find({},{},function(e,docs) {
 			res.render('admin', {
-				tablelist : docs
+				melaItems : docs
 			})
 		})
 	});
