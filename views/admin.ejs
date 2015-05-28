@@ -60,18 +60,6 @@
 		<form class="row" action="/admin" id="closephoto"> 
 			<button class="small-12 columns button" id="close">Remove Image</button>
 		</form>
-
-		<div class="row">
-			<section class="small-12 columns">
-				<% if (melaItems) { %>
-					<% melaItems.forEach(function(item) { %>
-						<h1><%= item.item %></h1>
-						<li><%= item.names %></li>
-					<%	}); %>
-				<% } %>
-			</section>
-		</div>
-
 		<script src="javascripts/jquery.js"></script>
 		<script src="javascripts/foundation.js"></script>
 		<script src="javascripts/foundation.reveal.js"></script>
